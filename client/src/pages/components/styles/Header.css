@@ -1,0 +1,83 @@
+.navbar{
+    background-color: #FFFFFF;
+
+}
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.brand  li{
+    list-style: none;
+    font-family: "Droid Sans Mono", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+.brand li:nth-child(even){
+    color: #ee436a;
+}
+.effect{
+    box-shadow: rgba(0, 0, 0, 0.08) 0 4px 12px;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 80px;
+    height: 40px;
+    border: 1px solid rgba(8, 8, 8, 0.6);
+    background-color: black;
+    color: #ffffff;
+    border-radius: 20px;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+.login:hover{
+    transition: all 0.5s ease-in-out;
+    background-color: #FFFFFF;
+    color: #000;
+    scale: 1.1;
+
+}
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 80px;
+    height: 40px;
+    border: 1px solid rgba(8, 8, 8, 0.6);
+    background-color: #ffffff;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+.register:hover{
+    transition: all 0.5s ease-in;
+    background-color: #000000;
+    font-weight: normal;
+    color: #ffffff;
+    scale: 1.1;
+}
+.user-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-icon{
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+.user-icon:hover{
+    background-color: #e49dae;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}

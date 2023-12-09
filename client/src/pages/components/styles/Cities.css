@@ -1,0 +1,35 @@
+.cities-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../../../assets/Cities_Background.jpg") no-repeat;
+    background-size: cover;
+
+}
+.cities-container h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 600px;
+    color: #FFFFFF;
+    padding: 10px;
+    background-color: black;
+    border-radius: 5px;
+}
+.cities{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.city{
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+}
