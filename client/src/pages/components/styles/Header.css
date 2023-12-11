@@ -74,10 +74,9 @@
     height: 25px;
     padding: 10px;
     border-radius: 50%;
-
 }
 .user-icon:hover{
-    background-color: #e49dae;
+    background-color: #efbbd1;
     transition: all 0.5s ease-in;
     cursor: pointer;
 }

@@ -13,12 +13,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    width: 70%;
-    color: #FFFFFF;
+    margin-top: 20px;
+    /*width: 70%;*/
+    color: black;
+    font-weight: bolder;
+    font-family: -apple-system, sans-serif;
+    font-size: 40px;
+    text-align: center;
     padding: 10px;
-    background-color: #ee436a;
-    border-radius: 5px;
+    /*background-color: #c21760;*/
+    /*border-radius: 5px;*/
 }
 .cities{
     width: 100%;
@@ -35,7 +39,8 @@
     margin: 20px;
     border-radius: 5px;
     border: 1px solid rgb(86, 111, 178);
-    box-shadow: 0 1px 2px rgb(255, 255, 255)
+    box-shadow: 0 1px 2px rgb(255, 255, 255);
+    text-decoration: none;
 }
 .city:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -46,11 +51,17 @@
     width: 300px;
     height: 150px;
 }
+.city-name{
+    display:flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
 .city-name p{
-    background-color: black;
-    color: #FFFFFF;
+    background-color: #ee436a;
+    color: #FFF;
     text-align: center;
     padding: 3px;
+    width:120px;
     border-radius: 10px;
 }
 .bottom-chilli{

@@ -7,7 +7,7 @@ import React from "react";
 import Home from "../pages/Home.jsx";
 library.add(fab, fas);
 import Header from "../pages/components/Header.jsx";
-import Loaders from "../shared/Loaders.jsx";
+import Loaders from "../features/Loaders.jsx";
 const Login = React.lazy(() => import("../pages/Login.jsx"));
 const Registration = React.lazy(() => import("../pages/Registration.jsx"));
 

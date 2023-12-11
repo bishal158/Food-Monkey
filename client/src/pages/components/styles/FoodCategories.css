@@ -17,11 +17,13 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    width: 70%;
-    color: #FFFFFF;
+    font-size: 40px;
+    font-family: -apple-system, sans-serif;
+    font-weight: bolder;
+    color: black;
     padding: 10px;
-    background-color: #ee436a;
-    border-radius: 5px;
+    /*background-color: #ee436a;*/
+    /*border-radius: 5px;*/
 }
 .food-categories{
     width: 100%;
@@ -42,7 +44,7 @@
     box-shadow: 0 1px 2px rgb(255, 255, 255)
 }
 .food:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(231, 73, 73, 0.5);
     transition: all 0.4s ease-in-out;
     translate: scale(1.5, 1.5);
     transform: scale(1.1);
@@ -54,6 +56,7 @@
 }
 .food-name{
     background-color: #FF5C00FF;
+    background-size: cover;
     display: flex;
     justify-content: center;
     padding: 10px;

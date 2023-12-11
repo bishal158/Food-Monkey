@@ -1,68 +1,190 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 import "./styles/MostOrderedFood.css";
-import "swiper";
 import Bangladeshi from "../../assets/images/Bangladeshi.jpg";
 import Japaness from "../../assets/images/Japaness.jpg";
 import Thai from "../../assets/images/Thai.jpg";
 import FastFood from "../../assets/images/FastFood.jpg";
 import Chinese from "../../assets/images/Chiness.jpg";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBangladeshiTakaSign } from "@fortawesome/free-solid-svg-icons";
+import {faBangladeshiTakaSign, faCartPlus} from "@fortawesome/free-solid-svg-icons";
+import {Link} from "react-router-dom";
+import {useRef} from "react";
 
 const MostOrderedFood = () => {
-  const mostorderedfoods = [
-    {
-      name: "Bangladeshi",
-      cover: Bangladeshi,
-      taka: 299,
-    },
-    {
-      name: "Japaness",
-      cover: Japaness,
-      taka: 299,
-    },
-    {
-      name: "Thai",
-      cover: Thai,
-      taka: 299,
-    },
-    {
-      name: "FastFood",
-      cover: FastFood,
-      taka: 299,
-    },
-    {
-      name: "Chinese",
-      cover: Chinese,
-      taka: 299,
-    },
-  ];
+  const progressCircle = useRef(null);
+  const progressContent = useRef(null);
+  const onAutoplayTimeLeft = (s, time, progress) => {
+    progressCircle.current.style.setProperty('--progress', 1 - progress);
+    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+  };
   return (
     <>
-      <div className={"container-fluid most-ordered-foods-container"}>
-        <h2>Most Ordered Foods</h2>
+      <div className={"most-ordered-foods-container"}>
+        <h2>Our Most Ordered Foods</h2>
         <Swiper
-          className={"most-ordered-foods"}
-          modules={[Navigation, Pagination, Autoplay]}
-          navigation={true}
+            effect={"coverflow"}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={"auto"}
+            coverflowEffect={{
+              rotate: 40,
+              stretch: 0,
+              depth: 200,
+              modifier: 1,
+            }}
+            pagination={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            onAutoplayTimeLeft={onAutoplayTimeLeft}
+            modules={[EffectCoverflow, Pagination, Autoplay]}
+            className="mySwiper"
         >
-          <div className={""}>
-            {mostorderedfoods.map((food, index) => (
-              <SwiperSlide key={index}>
-                <Link className="card food " to={"/login"}>
-                  <img src={food.cover} className="card-img-top" alt="..." />
-                  <div className="card-body food-name">
-                    <p>{food.name}</p>
-                    <p>
-                      From {food.taka}
-                      <FontAwesomeIcon icon={faBangladeshiTakaSign} />
-                    </p>
-                  </div>
+          <SwiperSlide>
+            <div className={"most-ordered-foods"}>
+              <div className={"most-ordered-food-image"}>
+                <img src={Bangladeshi} alt={"...."}/>
+              </div>
+              <div className={"most-ordered-food-details"}>
+                <h5>Kacchi Biryani</h5>
+                <p>299<FontAwesomeIcon icon={faBangladeshiTakaSign}/></p>
+                <Link to={'/login'} className={'button'}>
+                  Order Now
+                  <FontAwesomeIcon icon={faCartPlus}/>
                 </Link>
-              </SwiperSlide>
-            ))}
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={"most-ordered-foods"}>
+              <div className={"most-ordered-food-image"}>
+                <img src={Bangladeshi} alt={"...."}/>
+              </div>
+              <div className={"most-ordered-food-details"}>
+                <h5>Kacchi Biryani</h5>
+                <p>299<FontAwesomeIcon icon={faBangladeshiTakaSign}/></p>
+                <Link to={'/'} className={'button'}>
+                  Order Now
+                  <FontAwesomeIcon icon={faCartPlus}/>
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={"most-ordered-foods"}>
+              <div className={"most-ordered-food-image"}>
+                <img src={Bangladeshi} alt={"...."}/>
+              </div>
+              <div className={"most-ordered-food-details"}>
+                <h5>Kacchi Biryani</h5>
+                <p>299<FontAwesomeIcon icon={faBangladeshiTakaSign}/></p>
+                <Link to={'/'} className={'button'}>
+                  Order Now
+                  <FontAwesomeIcon icon={faCartPlus}/>
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={"most-ordered-foods"}>
+              <div className={"most-ordered-food-image"}>
+                <img src={Bangladeshi} alt={"...."}/>
+              </div>
+              <div className={"most-ordered-food-details"}>
+                <h5>Kacchi Biryani</h5>
+                <p>299<FontAwesomeIcon icon={faBangladeshiTakaSign}/></p>
+                <Link to={'/'} className={'button'}>
+                  Order Now
+                  <FontAwesomeIcon icon={faCartPlus}/>
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={"most-ordered-foods"}>
+              <div className={"most-ordered-food-image"}>
+                <img src={Bangladeshi} alt={"...."}/>
+              </div>
+              <div className={"most-ordered-food-details"}>
+                <h5>Kacchi Biryani</h5>
+                <p>299<FontAwesomeIcon icon={faBangladeshiTakaSign}/></p>
+                <Link to={'/'} className={'button'}>
+                  Order Now
+                  <FontAwesomeIcon icon={faCartPlus}/>
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={"most-ordered-foods"}>
+              <div className={"most-ordered-food-image"}>
+                <img src={Bangladeshi} alt={"...."}/>
+              </div>
+              <div className={"most-ordered-food-details"}>
+                <h5>Kacchi Biryani</h5>
+                <p>299<FontAwesomeIcon icon={faBangladeshiTakaSign}/></p>
+                <Link to={'/'} className={'button'}>
+                  Order Now
+                  <FontAwesomeIcon icon={faCartPlus}/>
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={"most-ordered-foods"}>
+              <div className={"most-ordered-food-image"}>
+                <img src={Bangladeshi} alt={"...."}/>
+              </div>
+              <div className={"most-ordered-food-details"}>
+                <h5>Kacchi Biryani</h5>
+                <p>299<FontAwesomeIcon icon={faBangladeshiTakaSign}/></p>
+                <Link to={'/'} className={'button'}>
+                  Order Now
+                  <FontAwesomeIcon icon={faCartPlus}/>
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={"most-ordered-foods"}>
+              <div className={"most-ordered-food-image"}>
+                <img src={Bangladeshi} alt={"...."}/>
+              </div>
+              <div className={"most-ordered-food-details"}>
+                <h5>Kacchi Biryani</h5>
+                <p>299<FontAwesomeIcon icon={faBangladeshiTakaSign}/></p>
+                <Link to={'/'} className={'button'}>
+                  Order Now
+                  <FontAwesomeIcon icon={faCartPlus}/>
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={"most-ordered-foods"}>
+              <div className={"most-ordered-food-image"}>
+                <img src={Bangladeshi} alt={"...."}/>
+              </div>
+              <div className={"most-ordered-food-details"}>
+                <h5>Kacchi Biryani</h5>
+                <p>299<FontAwesomeIcon icon={faBangladeshiTakaSign}/></p>
+                <Link to={'/'} className={'button'}>
+                  Order Now
+                  <FontAwesomeIcon icon={faCartPlus}/>
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+          <div className="autoplay-progress" slot="container-end">
+            <svg viewBox="0 0 48 48" ref={progressCircle}>
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span ref={progressContent}></span>
           </div>
         </Swiper>
       </div>
