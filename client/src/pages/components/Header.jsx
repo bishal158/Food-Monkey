@@ -23,7 +23,7 @@ const Header = () => {
     return () => window.removeEventListener("resize", getWidth);
   }, [width]);
 
-  const user = true;
+  // const user = true;
 
   return (
     <>

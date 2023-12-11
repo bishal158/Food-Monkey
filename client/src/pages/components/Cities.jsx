@@ -52,9 +52,9 @@ const Cities = () => {
       <>
         <div className={"container-fluid cities-container"}>
           <h2>Find us in these cities and many more!</h2>
-          <div className={"cities"}>
+          <div className={"cities "}>
             {cities.map((city,index) => (
-                <Link className="card city" key={index} to={'/login'}>
+                <Link className="card city slit-in-vertical" key={index} to={'/login'}>
                   <img src={city.cover} className="card-img-top" alt="..."/>
                   <div className="card-body city-name">
                     <p>{city.name}</p>

@@ -1,0 +1,71 @@
+.food-categories-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../assets/flat-lay-arrangement-with-salad-box-sauce.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*background: linear-gradient(496deg, #FDFDFD 68%, #FF5C00 98%);*/
+
+}
+.food-categories-container h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 70%;
+    color: #FFFFFF;
+    padding: 10px;
+    background-color: #ee436a;
+    border-radius: 5px;
+}
+.food-categories{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.food{
+    width: 350px;
+    height: 400px;
+    margin: 20px;
+    text-decoration: none;
+    background-color: #FF5C00FF;
+    border-radius: 10px;
+    border: 1px solid rgb(86, 111, 178);
+    box-shadow: 0 1px 2px rgb(255, 255, 255)
+}
+.food:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease-in-out;
+    translate: scale(1.5, 1.5);
+    transform: scale(1.1);
+}
+.food img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+.food-name{
+    background-color: #FF5C00FF;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.food-name p{
+    margin: 5px;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: rgb(86, 111, 178);
+    text-align: center;
+    padding: 3px;
+    border-radius: 5px;
+    width: 150px;
+    font-family: -apple-system, sans-serif;
+}
