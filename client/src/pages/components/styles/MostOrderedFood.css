@@ -6,12 +6,16 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-
+    /*background: url("../../../assets/footer.jpg") no-repeat;*/
+    /*background-size: cover;*/
+    /*object-fit: cover;*/
+    background-color: #FFFFFF;
 }
 .most-ordered-foods-container h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     /*width: 70%;*/
     color: black;
     font-size: 35px;

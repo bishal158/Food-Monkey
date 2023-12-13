@@ -48,7 +48,7 @@
     translate: scale(1.2, 1.2);
 }
 .city img{
-    width: 300px;
+    width: 100%;
     height: 150px;
 }
 .city-name{
