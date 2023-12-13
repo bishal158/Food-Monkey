@@ -3,7 +3,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 .navbar{
     background-color: #FFFFFF;
@@ -12,7 +11,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .brand  li{
     list-style: none;
@@ -135,12 +133,16 @@
 }
 .react-modal-sheet-header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: rgba(212, 212, 224, 0.1);
     width: 100%;
-    height: 250px;
+    height: 100%;
+
 }
+
+
+
 .react-modal-sheet-drag-indicator {
     cursor: n-resize;
 }
@@ -183,4 +185,16 @@
     transform: scale(1.1);
     box-shadow: rgba(255, 255, 255, 0.1) 0 1px 1px 0 inset, rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
     border-radius: 15px;
+}
+.react-modal-sheet-content h1{
+    text-align: center;
+    padding: 10ox;
+    margin: 10px;
+    color: #FFF;
+}
+.react-modal-sheet-content p{
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    color: #FFF;
 }

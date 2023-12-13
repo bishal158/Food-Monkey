@@ -1,0 +1,40 @@
+.promotion-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    background-image: linear-gradient(to right top, #ffb84e, #FFB84E, #FFB84E, #fff, #fff);
+}
+.promotion-container h2{
+    text-align: center;
+    background-color: #C21E56;
+    padding: 15px;
+    color: #FFF;
+    font-size: larger;
+    font-weight: bold;
+    font-family: -apple-system, sans-serif;
+}
+.promotion-container .swiper{
+
+    width: 100%;
+    height: 700px;
+    padding: 0;
+    margin: 0;
+}
+.promotion-container .swiper-slide{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.promotion-container .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 20px;
+}

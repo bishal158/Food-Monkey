@@ -8,18 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/components/ContactUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/ContactUs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/components/MostOrderedFood.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/MostOrderedFood.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/components/Support.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/Support.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/components/styles/Cities.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/styles/Cities.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/components/styles/ContactUs.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/styles/ContactUs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/components/styles/FoodCategories.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/styles/FoodCategories.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/components/styles/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/styles/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/components/styles/MostOrderedFood.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/styles/MostOrderedFood.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/components/styles/Support.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/styles/Support.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/routes/RootRoute.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routes/RootRoute.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +108,8 @@
       <workItem from="1702345449673" duration="16850000" />
       <workItem from="1702380958156" duration="582000" />
       <workItem from="1702381550650" duration="12679000" />
-      <workItem from="1702429393629" duration="2717000" />
+      <workItem from="1702429393629" duration="2847000" />
+      <workItem from="1702468298658" duration="1371000" />
     </task>
     <servers />
   </component>
