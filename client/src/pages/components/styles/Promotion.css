@@ -31,6 +31,10 @@
     justify-content: center;
     align-items: center;
 }
+.promotion-container .swiper-slide h1{
+    color: #ee436a;
+    float: right;
+}
 .promotion-container .swiper-slide img{
     width: 100%;
     height: 100%;

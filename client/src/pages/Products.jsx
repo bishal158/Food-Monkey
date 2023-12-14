@@ -1,7 +1,8 @@
 import { Promotion } from "./components/Promotion.jsx";
 import "./styles/Products.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {Filter} from "../features/Filter.jsx";
+import { Filter } from "../features/Filter.jsx";
+import { ProductList } from "./components/ProductList.jsx";
 // import width from '../helpers/ScreenWidth.jsx'
 function Products() {
   return (
@@ -16,11 +17,13 @@ function Products() {
           <FontAwesomeIcon icon="fa-solid fa-sliders" /> Filter
         </button>
       </div>
-      <div className={"product-list-container"}>
-            <div>
-
-
-            </div>
+      <div className={"products-filter-container"}>
+        <div className={"filter-screen"}>
+          <Filter />
+        </div>
+        <div className={"product-list-screen"}>
+          <ProductList />
+        </div>
       </div>
     </>
   );

@@ -8,6 +8,7 @@ import Home from "../pages/Home.jsx";
 library.add(fab, fas);
 import Header from "../pages/components/Header.jsx";
 import Loaders from "../features/Loaders.jsx";
+import {ProductContextProvider} from "../context/ProductContext.jsx";
 const Login = React.lazy(() => import("../pages/Login.jsx"));
 const Registration = React.lazy(() => import("../pages/Registration.jsx"));
 const Products = React.lazy(() => import("../pages/Products.jsx"));
@@ -18,53 +19,55 @@ const AboutUs = React.lazy(() => import("../pages/AboutUs.jsx"));
 function RootRoute() {
   return (
     <UserContextProvider>
-      <Header />
-      <Routes>
-        <Route path={"/"} element={<Home />} />
-        <Route path={"products"} element={
-          <React.Suspense fallback={<Loaders />}>
-            <Products />
-          </React.Suspense>
-        } />
-        <Route path={"services"} element={
-        <React.Suspense fallback={<Loaders />}>
-          <Services />
-        </React.Suspense>} />
+        <ProductContextProvider>
+            <Header />
+            <Routes>
+                <Route path={"/"} element={<Home />} />
+                <Route path={"products"} element={
+                    <React.Suspense fallback={<Loaders />}>
+                        <Products />
+                    </React.Suspense>
+                } />
+                <Route path={"services"} element={
+                    <React.Suspense fallback={<Loaders />}>
+                        <Services />
+                    </React.Suspense>} />
 
-        <Route path={"checkout"} element={
-        <React.Suspense fallback={<Loaders />}>
-          <Checkout />
-        </React.Suspense>} />
+                <Route path={"checkout"} element={
+                    <React.Suspense fallback={<Loaders />}>
+                        <Checkout />
+                    </React.Suspense>} />
 
-        <Route path={"about-us"} element={
-        <React.Suspense fallback={<Loaders />}>
-          <AboutUs />
-        </React.Suspense>} />
-        <Route
-          path={"cart-items"}
-          element={
-            <React.Suspense fallback={<Loaders />}>
-              <CartItems />
-            </React.Suspense>
-          }
-        />
-        <Route
-          path={"login"}
-          element={
-            <React.Suspense fallback={<Loaders />}>
-              <Login />
-            </React.Suspense>
-          }
-        />
-        <Route
-          path={"register"}
-          element={
-            <React.Suspense fallback={<Loaders />}>
-              <Registration />
-            </React.Suspense>
-          }
-        />
-      </Routes>
+                <Route path={"about-us"} element={
+                    <React.Suspense fallback={<Loaders />}>
+                        <AboutUs />
+                    </React.Suspense>} />
+                <Route
+                    path={"cart-items"}
+                    element={
+                        <React.Suspense fallback={<Loaders />}>
+                            <CartItems />
+                        </React.Suspense>
+                    }
+                />
+                <Route
+                    path={"login"}
+                    element={
+                        <React.Suspense fallback={<Loaders />}>
+                            <Login />
+                        </React.Suspense>
+                    }
+                />
+                <Route
+                    path={"register"}
+                    element={
+                        <React.Suspense fallback={<Loaders />}>
+                            <Registration />
+                        </React.Suspense>
+                    }
+                />
+            </Routes>
+        </ProductContextProvider>
     </UserContextProvider>
   );
 }
