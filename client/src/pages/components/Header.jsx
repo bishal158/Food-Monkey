@@ -104,7 +104,9 @@ const Header = () => {
         </div>
       </nav>
       {/*  Pop Up model */}
+
       <Sheet
+          className={'header-sheet'}
         isOpen={isOpen}
         onClose={() => setOpen(false)}
         detent={"content-height"}

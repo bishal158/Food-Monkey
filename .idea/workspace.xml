@@ -7,11 +7,15 @@
     <list default="true" id="f3f3b295-fb3b-43f2-ba3a-62582409300e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/features/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/Filter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/styles/Filter.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/styles/Filter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/AboutUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/AboutUs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Products.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/components/Promotion.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/Promotion.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/components/ProductList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/ProductList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/components/styles/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/styles/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/components/styles/Promotion.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/styles/Promotion.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/styles/Products.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/styles/Products.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/routes/RootRoute.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routes/RootRoute.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -113,7 +117,10 @@
       <workItem from="1702429393629" duration="2847000" />
       <workItem from="1702468298658" duration="14395000" />
       <workItem from="1702486170962" duration="74000" />
-      <workItem from="1702519884736" duration="6197000" />
+      <workItem from="1702519884736" duration="15496000" />
+      <workItem from="1702555496073" duration="13725000" />
+      <workItem from="1702609010574" duration="9760000" />
+      <workItem from="1702641159162" duration="5659000" />
     </task>
     <servers />
   </component>

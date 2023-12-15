@@ -121,17 +121,18 @@
 }
 
 
-.react-modal-sheet-backdrop {
+
+.header-sheet .react-modal-sheet-backdrop {
     background-color: rgba(0, 0, 0, 0.5);
 }
-.react-modal-sheet-container {
+.header-sheet .react-modal-sheet-container {
     display: block;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
 }
-.react-modal-sheet-header {
+.header-sheet  .react-modal-sheet-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -141,12 +142,10 @@
 
 }
 
-
-
-.react-modal-sheet-drag-indicator {
+.header-sheet .react-modal-sheet-drag-indicator {
     cursor: n-resize;
 }
-.react-modal-sheet-content {
+.header-sheet .react-modal-sheet-content {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -154,13 +153,13 @@
     height: 100%;
     background-color: #2c3034;
 }
-.react-modal-sheet-content .user{
+.header-sheet .react-modal-sheet-content .user{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #20c997;
+    background-color: #df6363;
     text-align: center;
     text-decoration: none;
     font-size: larger;
@@ -169,7 +168,7 @@
     margin-bottom: 10px;
     color: #FFFFFF;
 }
-.react-modal-sheet-content .user-info-content-modal{
+.header-sheet .react-modal-sheet-content .user-info-content-modal{
     text-decoration: none;
     text-align: center;
     padding: 10px;
@@ -179,20 +178,20 @@
     width: 250px;
 
 }
-.react-modal-sheet-content .user-info-content-modal:hover{
+.header-sheet .react-modal-sheet-content .user-info-content-modal:hover{
     transition: all 0.4s ease-in-out;
     background-color: #ee436a;
     transform: scale(1.1);
     box-shadow: rgba(255, 255, 255, 0.1) 0 1px 1px 0 inset, rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
     border-radius: 15px;
 }
-.react-modal-sheet-content h1{
+.header-sheet .react-modal-sheet-content h1{
     text-align: center;
-    padding: 10ox;
+    padding: 10px;
     margin: 10px;
     color: #FFF;
 }
-.react-modal-sheet-content p{
+.header-sheet .react-modal-sheet-content p{
     text-align: center;
     padding: 5px;
     margin: 5px;

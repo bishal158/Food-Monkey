@@ -3,8 +3,11 @@ import "./styles/Products.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Filter } from "../features/Filter.jsx";
 import { ProductList } from "./components/ProductList.jsx";
+import Sheet from "react-modal-sheet";
+import {useState} from "react";
 // import width from '../helpers/ScreenWidth.jsx'
 function Products() {
+    const [filter, setFilter] = useState(false);
   return (
     <>
       <Promotion />
@@ -13,7 +16,7 @@ function Products() {
       </h1>
       <div className={"search-filter-button"}>
         <input type="text" placeholder="Search Food" />
-        <button>
+        <button onClick={() => setFilter(true)}>
           <FontAwesomeIcon icon="fa-solid fa-sliders" /> Filter
         </button>
       </div>
@@ -25,6 +28,15 @@ function Products() {
           <ProductList />
         </div>
       </div>
+        <Sheet isOpen={filter} onClose={() => setFilter(false)} detent={"content-height"}>
+            <Sheet.Container>
+                <Sheet.Header />
+                <Sheet.Content>
+                    <Filter/>
+                </Sheet.Content>
+            </Sheet.Container>
+            <Sheet.Backdrop />
+        </Sheet>
     </>
   );
 }
