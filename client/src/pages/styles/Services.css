@@ -1,0 +1,18 @@
+.services-form-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services-form-container .container h2 {
+    text-align: center;
+    background-color: #c21760;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+}
+.services-form-container .container .tabs{
+    margin-top: 5px;
+    background-color: #ffffff;
+}

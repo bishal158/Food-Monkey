@@ -11,10 +11,10 @@ function Home() {
     <>
       <Banner />
       <MostOrderedFood />
-      <Cities />
+      <FoodCategories />
       <ContactUs />
       <Support />
-      <FoodCategories />
+      <Cities />
       <Footer />
     </>
   );

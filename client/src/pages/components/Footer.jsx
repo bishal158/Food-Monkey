@@ -213,7 +213,7 @@ function Footer() {
               <Link to={"/"} className={'info'}>Terms and Condition</Link>
               <Link to={"/"} className={'info'}>Privacy Policy</Link>
             </div>
-            <h5 className={'copy-right'}><FontAwesomeIcon icon="fa-solid fa-copyright" />2023 Copyright: MentorMind.com</h5>
+            <h5 className={'copy-right'}><FontAwesomeIcon icon="fa-solid fa-copyright" />2023 Copyright: FoodMonkey.com</h5>
           </div>
         </div>
       </div>
