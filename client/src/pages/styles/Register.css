@@ -173,6 +173,8 @@
     align-items: center;
 }
 .register-form-field-side .form .input-errors p{
+    
+    text-transform: capitalize;
     color: #FF007F;
     padding: 5px;
 }

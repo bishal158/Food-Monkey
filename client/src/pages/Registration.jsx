@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import "swiper/css";
 import "swiper/css/effect-creative";
 import "swiper/css/pagination";
@@ -17,6 +18,8 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Link} from "react-router-dom";
 
 const registerFormInitialValues = {
+    full_name: "",
+    phone: "",
     email: "",
     password: "",
     confirm_password: "",
@@ -81,12 +84,62 @@ function Registration (){
                                 <img src={Wings} alt={"..."} />
                             </SwiperSlide>
                         </Swiper>
-                        <h4>A feast fit for a king.</h4>
-                        <h5>Login and dig in!</h5>
+                        <h4>Food coma? We've got the cure.</h4>
+                        <h5>Unlock your delicious destiny. Register now!</h5>
                     </div>
                     <div className={"col-md-6 register-form-field-side"}>
                         <h2>Register Now</h2>
                         <form className={"form"} onSubmit={handleSubmit}>
+                        <div className={"form-input"}>
+                                <label htmlFor={"full_name"}>
+                                    <FontAwesomeIcon
+                                        icon="fa-solid fa-user"
+                                        className={"mx-1"}
+                                    />
+                                    Full Name
+                                </label>
+                                <input
+                                    type={"text"}
+                                    placeholder={"Enter Your Full Name"}
+                                    id={"full_name"}
+                                    name="full_name"
+                                    value={values.full_name}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                />
+                            </div>
+                            <div className={'input-errors'}>
+                                {errors.full_name && touched.full_name ? (
+                                    <p><FontAwesomeIcon icon="fa-solid fa-circle-exclamation"
+                                                        className={'mx-1 fa-fade'}/>{errors.full_name}</p>
+                                ) : null
+                                }
+                            </div>
+                            <div className={"form-input"}>
+                                <label htmlFor={"phone"}>
+                                    <FontAwesomeIcon
+                                        icon="fa-solid fa-phone"
+                                        className={"mx-1"}
+                                    />
+                                    Phone
+                                </label>
+                                <input
+                                    type={"text"}
+                                    placeholder={"Enter Your Phone Number"}
+                                    id={"phone"}
+                                    name="phone"
+                                    value={values.phone}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                />
+                            </div>
+                            <div className={'input-errors'}>
+                                {errors.phone && touched.phone ? (
+                                    <p><FontAwesomeIcon icon="fa-solid fa-circle-exclamation"
+                                                        className={'mx-1 fa-fade'}/>{errors.phone}</p>
+                                ) : null
+                                }
+                            </div>
                             <div className={"form-input"}>
                                 <label htmlFor={"email"}>
                                     <FontAwesomeIcon

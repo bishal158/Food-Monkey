@@ -6,7 +6,6 @@ function CartItems() {
         <>
             <div>
 
-                CartItem
             </div>
         </>
     )

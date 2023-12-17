@@ -16,6 +16,7 @@ const CartItems = React.lazy(() => import("../pages/CartItems.jsx"));
 const Services = React.lazy(() => import("../pages/Services.jsx"));
 const Checkout = React.lazy(() => import("../pages/CheckOut.jsx"));
 const AboutUs = React.lazy(() => import("../pages/AboutUs.jsx"));
+const ProductDetails = React.lazy(()=> import('../pages/ProductDetails.jsx')) 
 function RootRoute() {
   return (
     <UserContextProvider>
@@ -27,6 +28,11 @@ function RootRoute() {
                     <React.Suspense fallback={<Loaders />}>
                         <Products />
                     </React.Suspense>
+                } />
+                <Route path="product-details" element={
+                    <React.Suspense fallback={<Loaders/>}>
+                        <ProductDetails/>
+                    </React.Suspense>    
                 } />
                 <Route path={"services"} element={
                     <React.Suspense fallback={<Loaders />}>

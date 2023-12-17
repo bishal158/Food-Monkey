@@ -6,7 +6,6 @@ import Burger from '../../assets/images/promotion/Burgur.jpg'
 import Kabuli_pulao from '../../assets/images/promotion/Kabuli Pulao.jpg'
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import Footer from "./Footer.jsx";
 export const ProductList = () => {
     const productList = [
         {

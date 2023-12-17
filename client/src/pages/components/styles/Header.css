@@ -88,19 +88,59 @@
 }
 
 .user-info{
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding: 5px;
-    font-size: 10px;
+    font-size: 16px;
     font-family: -apple-system, sans-serif;
 }
+.user-info span{
+
+}
+@media screen and (max-width: 768px){
+    .user-info{
+        display: none;
+    }
+    .user-content{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px){
+    .user-icon{
+        display: none;
+    }
+}
 .user-info-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: black;
     text-decoration: none;
+    margin: 2px;
+}
+.user-info-content:nth-child(3){
+    position: relative;
+}
+.user-info-content:nth-child(3) .cart-counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -2px;
     padding: 10px;
-    margin: 5px;
+    right: -2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: -apple-system, sans-serif;
+    z-index: 1;
+    background-color: #ed6104;
+    color: #FFF;
 }
 .user-info-content:nth-child(1):hover{
     background-color: #ea5d9d;
