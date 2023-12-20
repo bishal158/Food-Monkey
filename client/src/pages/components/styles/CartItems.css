@@ -1,0 +1,30 @@
+
+
+.cart-items-details table img{
+    width: 40px;
+    height: 40px;
+}
+
+.cart-items-table{
+    background-color: #FFFFFF;
+}
+.payment-receipt-display{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 300px;
+    height: 150px;
+    background-color: #d2d9e3;
+    padding: 10px;
+}
+.payment-receipt-display .payment-review-button{
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    border-radius:5px;
+    background-color: black;
+    color: #fff;
+    margin-bottom: 10px;
+}

@@ -9,12 +9,15 @@ library.add(fab, fas);
 import Header from "../pages/components/Header.jsx";
 import Loaders from "../features/Loaders.jsx";
 import {ProductContextProvider} from "../context/ProductContext.jsx";
+import Footer from "../pages/components/Footer.jsx";
+import NotFound404 from "../pages/NotFound404.jsx";
 const Login = React.lazy(() => import("../pages/Login.jsx"));
 const Registration = React.lazy(() => import("../pages/Registration.jsx"));
 const Products = React.lazy(() => import("../pages/Products.jsx"));
-const CartItems = React.lazy(() => import("../pages/CartItems.jsx"));
+const CartItems = React.lazy(() => import("../pages/Cart.jsx"));
 const Services = React.lazy(() => import("../pages/Services.jsx"));
 const Checkout = React.lazy(() => import("../pages/CheckOut.jsx"));
+const ContactUs = React.lazy(() => import("../pages/ContactUs.jsx"))
 const AboutUs = React.lazy(() => import("../pages/AboutUs.jsx"));
 const ProductDetails = React.lazy(()=> import('../pages/ProductDetails.jsx')) 
 function RootRoute() {
@@ -43,13 +46,16 @@ function RootRoute() {
                     <React.Suspense fallback={<Loaders />}>
                         <Checkout />
                     </React.Suspense>} />
-
+                <Route path={"contact-us"} element={
+                    <React.Suspense fallback={<Loaders />}>
+                        <ContactUs />
+                    </React.Suspense>} />
                 <Route path={"about-us"} element={
                     <React.Suspense fallback={<Loaders />}>
                         <AboutUs />
                     </React.Suspense>} />
                 <Route
-                    path={"cart-items"}
+                    path={"cart"}
                     element={
                         <React.Suspense fallback={<Loaders />}>
                             <CartItems />
@@ -72,7 +78,9 @@ function RootRoute() {
                         </React.Suspense>
                     }
                 />
+                <Route path={"*"} element={<NotFound404/>}/>
             </Routes>
+            <Footer />
         </ProductContextProvider>
     </UserContextProvider>
   );

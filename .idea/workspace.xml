@@ -4,18 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3f3b295-fb3b-43f2-ba3a-62582409300e" name="Changes" comment="">
+    <list default="true" id="e8731501-9f1f-448a-a411-cc4bcb91e8b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Cart.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/CartItems.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/CartItems.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Registration.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/CartItems.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/components/ProductList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/ProductList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/components/styles/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/styles/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/styles/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/styles/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/styles/Register.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/styles/Register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/components/MostOrderedFood.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/MostOrderedFood.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/routes/RootRoute.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routes/RootRoute.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/validators/FormValidation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/validators/FormValidation.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +27,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -36,103 +36,54 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="2ZDT03C5I5AIGYRcU2TMqciPiG8" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2ZlUbLZ5jggtjrpRPVGn6sP9Cih" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ReactCreateComponentLastSelected&quot;: &quot;arrowFunctionComponent&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.16.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.16.20&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/MY CLASS/ALL OF MY PROJECTS/Food-Monkey/client/src/assets/images/promotion&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\UseR\\AppData\\Roaming\\npm\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "F:/MY CLASS/ALL OF MY PROJECTS/Food-Monkey",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.rcb.reactComponents" value="false" />
-        <entry key="com.haulmont.rcb.reactInspector" value="false" />
-        <entry key="com.haulmont.rcb.storybook" value="false" />
         <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
         <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
         <entry key="com.intellij.reactbuddy.storybook" value="false" />
       </map>
     </option>
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\MY CLASS\ALL OF MY PROJECTS\Food-Monkey\client\src\assets\images\promotion" />
-      <recent name="F:\MY CLASS\ALL OF MY PROJECTS\Food-Monkey\client\src\assets\images\payments" />
-      <recent name="F:\MY CLASS\ALL OF MY PROJECTS\Food-Monkey\client\src\assets\images\Payments" />
-      <recent name="F:\MY CLASS\ALL OF MY PROJECTS\Food-Monkey\client\src\assets\images\support-component" />
-      <recent name="F:\MY CLASS\ALL OF MY PROJECTS\Food-Monkey\client\src\assets" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\MY CLASS\ALL OF MY PROJECTS\Food-Monkey\client\src\features" />
-      <recent name="F:\MY CLASS\ALL OF MY PROJECTS\Food-Monkey\client\src\assets\images" />
-      <recent name="F:\MY CLASS\ALL OF MY PROJECTS\Food-Monkey\client\src\pages\components\styles" />
-      <recent name="F:\MY CLASS\ALL OF MY PROJECTS\Food-Monkey\client\src\pages" />
-      <recent name="F:\MY CLASS\ALL OF MY PROJECTS\Food-Monkey\client\src\routes" />
-    </key>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f3f3b295-fb3b-43f2-ba3a-62582409300e" name="Changes" comment="" />
-      <created>1701955423377</created>
+      <changelist id="e8731501-9f1f-448a-a411-cc4bcb91e8b2" name="Changes" comment="" />
+      <created>1702996229622</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1701955423377</updated>
-      <workItem from="1701955424988" duration="6134000" />
-      <workItem from="1701996735504" duration="9705000" />
-      <workItem from="1702038270338" duration="3085000" />
-      <workItem from="1702042387570" duration="9891000" />
-      <workItem from="1702084833315" duration="12578000" />
-      <workItem from="1702123232309" duration="9503000" />
-      <workItem from="1702171583061" duration="1559000" />
-      <workItem from="1702173687782" duration="13124000" />
-      <workItem from="1702217850524" duration="7409000" />
-      <workItem from="1702259067998" duration="670000" />
-      <workItem from="1702291460280" duration="17548000" />
-      <workItem from="1702345449673" duration="16850000" />
-      <workItem from="1702380958156" duration="582000" />
-      <workItem from="1702381550650" duration="12679000" />
-      <workItem from="1702429393629" duration="2847000" />
-      <workItem from="1702468298658" duration="14395000" />
-      <workItem from="1702486170962" duration="74000" />
-      <workItem from="1702519884736" duration="15496000" />
-      <workItem from="1702555496073" duration="13725000" />
-      <workItem from="1702609010574" duration="9760000" />
-      <workItem from="1702641159162" duration="10965000" />
-      <workItem from="1702691133191" duration="12336000" />
-      <workItem from="1702726570040" duration="1398000" />
-      <workItem from="1702729714801" duration="70000" />
-      <workItem from="1702746933193" duration="14000" />
-      <workItem from="1702777183572" duration="10735000" />
-      <workItem from="1702792677336" duration="3003000" />
+      <updated>1702996229622</updated>
+      <workItem from="1702996230677" duration="4149000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
 </project>

@@ -209,9 +209,9 @@ function Footer() {
           <div className={"information"}>
             <h4>More Information</h4>
             <div className={"infos"}>
-              <Link to={"/"} className={'info'}>About Us</Link>
-              <Link to={"/"} className={'info'}>Terms and Condition</Link>
-              <Link to={"/"} className={'info'}>Privacy Policy</Link>
+              <Link to={"/about-us"} className={'info'}>About Us</Link>
+              <Link to={"/terms-and-condition"} className={'info'}>Terms and Condition</Link>
+              <Link to={"/privacy-policy"} className={'info'}>Privacy Policy</Link>
             </div>
             <h5 className={'copy-right'}><FontAwesomeIcon icon="fa-solid fa-copyright" />2023 Copyright: FoodMonkey.com</h5>
           </div>

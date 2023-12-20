@@ -1,0 +1,86 @@
+.contact-us-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.contact-us-container h2{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: -apple-system, sans-serif;
+    font-weight: bold;
+
+}
+
+.contact-us-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.contact-us-form  .contact-us-form-input{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-us-form .contact-us-form-input label{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contact-us-form .contact-us-form-input input{
+    width: 100%;
+    padding: 10px;
+}
+.contact-us-form  button{
+    width: 150px;
+    padding: 8px;
+    margin-top:10px;
+    margin-bottom: 50px;
+    background-color: #c21760;
+    border: none;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.success-message{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: column;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.success-message h2{
+    color: #ee436a;
+    font-family: -apple-system, sans-serif;
+    font-weight: bold;
+}
+.success-message .go-back{
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #c21760;
+}

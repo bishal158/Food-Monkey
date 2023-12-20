@@ -10,7 +10,7 @@ import Bangladeshi from "../../assets/images/Bangladeshi.jpg";
 // import FastFood from "../../assets/images/FastFood.jpg";
 // import Chinese from "../../assets/images/Chiness.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faBangladeshiTakaSign, faCartPlus} from "@fortawesome/free-solid-svg-icons";
+import {faBangladeshiTakaSign} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
 import {useRef} from "react";
 
@@ -53,10 +53,9 @@ const MostOrderedFood = () => {
               </div>
               <div className={"most-ordered-food-details"}>
                 <h5>Kacchi Biryani</h5>
-                <p>299<FontAwesomeIcon icon={faBangladeshiTakaSign}/></p>
-                <Link to={'/login'} className={'button'}>
-                  Order Now
-                  <FontAwesomeIcon icon={faCartPlus}/>
+                <p>299 <FontAwesomeIcon icon={faBangladeshiTakaSign} className={'fa-fade link-primary'}/></p>
+                <Link to={'/product-details'} className={'button'}>
+                 Product Details
                 </Link>
               </div>
             </div>
@@ -68,10 +67,9 @@ const MostOrderedFood = () => {
               </div>
               <div className={"most-ordered-food-details"}>
                 <h5>Kacchi Biryani</h5>
-                <p>299<FontAwesomeIcon icon={faBangladeshiTakaSign}/></p>
-                <Link to={'/'} className={'button'}>
-                  Order Now
-                  <FontAwesomeIcon icon={faCartPlus}/>
+                <p>299 <FontAwesomeIcon icon={faBangladeshiTakaSign} className={'fa-fade link-primary'}/></p>
+                <Link to={'/product-details'} className={'button'}>
+                  Product Details
                 </Link>
               </div>
             </div>
@@ -83,10 +81,9 @@ const MostOrderedFood = () => {
               </div>
               <div className={"most-ordered-food-details"}>
                 <h5>Kacchi Biryani</h5>
-                <p>299<FontAwesomeIcon icon={faBangladeshiTakaSign}/></p>
-                <Link to={'/'} className={'button'}>
-                  Order Now
-                  <FontAwesomeIcon icon={faCartPlus}/>
+                <p>299 <FontAwesomeIcon icon={faBangladeshiTakaSign} className={'fa-fade link-primary'}/></p>
+                <Link to={'/product-details'} className={'button'}>
+                  Product Details
                 </Link>
               </div>
             </div>
@@ -98,10 +95,9 @@ const MostOrderedFood = () => {
               </div>
               <div className={"most-ordered-food-details"}>
                 <h5>Kacchi Biryani</h5>
-                <p>299<FontAwesomeIcon icon={faBangladeshiTakaSign}/></p>
-                <Link to={'/'} className={'button'}>
-                  Order Now
-                  <FontAwesomeIcon icon={faCartPlus}/>
+                <p>299 <FontAwesomeIcon icon={faBangladeshiTakaSign} className={'fa-fade link-primary'}/></p>
+                <Link to={'/product-details'} className={'button'}>
+                  Product Details
                 </Link>
               </div>
             </div>
@@ -113,10 +109,9 @@ const MostOrderedFood = () => {
               </div>
               <div className={"most-ordered-food-details"}>
                 <h5>Kacchi Biryani</h5>
-                <p>299<FontAwesomeIcon icon={faBangladeshiTakaSign}/></p>
-                <Link to={'/'} className={'button'}>
-                  Order Now
-                  <FontAwesomeIcon icon={faCartPlus}/>
+                <p>299 <FontAwesomeIcon icon={faBangladeshiTakaSign} className={'fa-fade link-primary'}/></p>
+                <Link to={'/product-details'} className={'button'}>
+                  Product Details
                 </Link>
               </div>
             </div>
@@ -128,10 +123,9 @@ const MostOrderedFood = () => {
               </div>
               <div className={"most-ordered-food-details"}>
                 <h5>Kacchi Biryani</h5>
-                <p>299<FontAwesomeIcon icon={faBangladeshiTakaSign}/></p>
-                <Link to={'/'} className={'button'}>
-                  Order Now
-                  <FontAwesomeIcon icon={faCartPlus}/>
+                <p>299 <FontAwesomeIcon icon={faBangladeshiTakaSign} className={'fa-fade link-primary'}/></p>
+                <Link to={'/product-details'} className={'button'}>
+                  Product Details
                 </Link>
               </div>
             </div>
@@ -143,10 +137,9 @@ const MostOrderedFood = () => {
               </div>
               <div className={"most-ordered-food-details"}>
                 <h5>Kacchi Biryani</h5>
-                <p>299<FontAwesomeIcon icon={faBangladeshiTakaSign}/></p>
-                <Link to={'/'} className={'button'}>
-                  Order Now
-                  <FontAwesomeIcon icon={faCartPlus}/>
+                <p>299 <FontAwesomeIcon icon={faBangladeshiTakaSign} className={'fa-fade link-primary'}/></p>
+                <Link to={'/product-details'} className={'button'}>
+                  Product Details
                 </Link>
               </div>
             </div>
@@ -158,10 +151,9 @@ const MostOrderedFood = () => {
               </div>
               <div className={"most-ordered-food-details"}>
                 <h5>Kacchi Biryani</h5>
-                <p>299<FontAwesomeIcon icon={faBangladeshiTakaSign}/></p>
-                <Link to={'/'} className={'button'}>
-                  Order Now
-                  <FontAwesomeIcon icon={faCartPlus}/>
+                <p>299 <FontAwesomeIcon icon={faBangladeshiTakaSign} className={'fa-fade link-primary'}/></p>
+                <Link to={'/product-details'} className={'button'}>
+                  Product Details
                 </Link>
               </div>
             </div>
@@ -173,10 +165,51 @@ const MostOrderedFood = () => {
               </div>
               <div className={"most-ordered-food-details"}>
                 <h5>Kacchi Biryani</h5>
-                <p>299<FontAwesomeIcon icon={faBangladeshiTakaSign}/></p>
-                <Link to={'/'} className={'button'}>
-                  Order Now
-                  <FontAwesomeIcon icon={faCartPlus}/>
+                <p>299 <FontAwesomeIcon icon={faBangladeshiTakaSign} className={'fa-fade link-primary'}/></p>
+                <Link to={'/product-details'} className={'button'}>
+                  Product Details
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={"most-ordered-foods"}>
+              <div className={"most-ordered-food-image"}>
+                <img src={Bangladeshi} alt={"...."}/>
+              </div>
+              <div className={"most-ordered-food-details"}>
+                <h5>Kacchi Biryani</h5>
+                <p>299 <FontAwesomeIcon icon={faBangladeshiTakaSign} className={'fa-fade link-primary'}/></p>
+                <Link to={'/product-details'} className={'button'}>
+                  Product Details
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={"most-ordered-foods"}>
+              <div className={"most-ordered-food-image"}>
+                <img src={Bangladeshi} alt={"...."}/>
+              </div>
+              <div className={"most-ordered-food-details"}>
+                <h5>Kacchi Biryani</h5>
+                <p>299 <FontAwesomeIcon icon={faBangladeshiTakaSign} className={'fa-fade link-primary'}/></p>
+                <Link to={'/product-details'} className={'button'}>
+                  Product Details
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={"most-ordered-foods"}>
+              <div className={"most-ordered-food-image"}>
+                <img src={Bangladeshi} alt={"...."}/>
+              </div>
+              <div className={"most-ordered-food-details"}>
+                <h5>Kacchi Biryani</h5>
+                <p>299 <FontAwesomeIcon icon={faBangladeshiTakaSign} className={'fa-fade link-primary'}/></p>
+                <Link to={'/product-details'} className={'button'}>
+                  Product Details
                 </Link>
               </div>
             </div>

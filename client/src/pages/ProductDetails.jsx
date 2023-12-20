@@ -61,11 +61,11 @@ function ProductDetails() {
                 <p>Description:</p>
                 <span>
                   Goat meat, spices, and basmati rice are used to make it.
-                  Common variants substitute goat meat . Hyderabadi biryani
+                  Common variants substitute goat meat . Hyderabad biryani
                   comes in a variety of varieties, where the rice is cooked with
                   marinated goat meat. Goat meat, spices, and basmati rice are
                   used to make it. Common variants substitute goat meat .
-                  Hyderabadi biryani comes in a variety of varieties, where the
+                  Hyderabad biryani comes in a variety of varieties, where the
                   rice is cooked with marinated goat meat.
                 </span>
               </div>

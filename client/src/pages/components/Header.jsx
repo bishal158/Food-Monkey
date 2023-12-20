@@ -80,7 +80,7 @@ const Header = () => {
                   </NavLink>
 
                   <NavLink
-                      to={"/cart-items"}
+                      to={"/cart"}
                       className={"user-info-content cart-tool"}
                   >
                       <FontAwesomeIcon icon="fa-solid fa-cart-plus"/>
@@ -98,6 +98,12 @@ const Header = () => {
                       className={"user-info-content credit-tool"}
                   >
                       <FontAwesomeIcon icon="fa-solid fa-credit-card"/>
+                  </NavLink>
+                  <NavLink
+                      to={"/contact-us"}
+                      className={"user-info-content contact-us-tool"}
+                  >
+                      <FontAwesomeIcon icon="fa-solid fa-address-book" />
                   </NavLink>
                   <NavLink
                       to={"/about-us"}
@@ -119,7 +125,7 @@ const Header = () => {
         isOpen={isOpen}
         onClose={() => setOpen(false)}
         detent={"content-height"}
-        snapPoints={[500, 400, 200, 0]}
+        snapPoints={[550,500, 400, 200, 0]}
       >
         <Sheet.Container>
           <Sheet.Header></Sheet.Header>
@@ -146,7 +152,7 @@ const Header = () => {
                   <FontAwesomeIcon icon="fa-solid fa-utensils" /> Order Foods
                 </NavLink>
                 <NavLink
-                  to={"/cart-items"}
+                  to={"/cart"}
                   className={"user-info-content-modal"}
                 >
                   <FontAwesomeIcon icon="fa-solid fa-cart-plus" /> Cart Items
@@ -157,9 +163,12 @@ const Header = () => {
                 <NavLink to={"/checkout"} className={"user-info-content-modal"}>
                   <FontAwesomeIcon icon="fa-solid fa-credit-card" /> Check Out
                 </NavLink>
-                <NavLink to={"/about-us"} className={"user-info-content-modal"}>
-                  <FontAwesomeIcon icon="fa-solid fa-circle-info" /> About Us
+                <NavLink to={"/contact-us"} className={"user-info-content-modal"}>
+                    <FontAwesomeIcon icon="fa-solid fa-address-book" /> Contact Us
                 </NavLink>
+                  <NavLink to={"/about-us"} className={"user-info-content-modal"}>
+                      <FontAwesomeIcon icon="fa-solid fa-circle-info" /> About Us
+                  </NavLink>
                 <NavLink to={"/"} className={"user-info-content-modal"}>
                   <FontAwesomeIcon icon="fa-solid fa-right-from-bracket" /> Log
                   Out
@@ -177,6 +186,9 @@ const Header = () => {
       <Tooltip anchorSelect=".credit-tool" place="bottom-start">
         Check Out
       </Tooltip>
+        <Tooltip anchorSelect=".contact-us-tool" place="top">
+            Contact Us
+        </Tooltip>
       <Tooltip anchorSelect=".about-us-tool" place="top">
         About Us
       </Tooltip>

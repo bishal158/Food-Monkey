@@ -1,0 +1,18 @@
+.cart-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.cart-items-screen{
+    width: 100%;
+    height: 100%;
+}
+.add-extra-courses-screen{
+    width: 100%;
+    height: 100%;
+}
