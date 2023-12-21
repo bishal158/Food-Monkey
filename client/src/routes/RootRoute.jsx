@@ -1,7 +1,7 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes   } from "react-router-dom";
 import { UserContextProvider } from "../context/UserContext.jsx";
 import React from "react";
 import Home from "../pages/Home.jsx";
@@ -11,6 +11,7 @@ import Loaders from "../features/Loaders.jsx";
 import {ProductContextProvider} from "../context/ProductContext.jsx";
 import Footer from "../pages/components/Footer.jsx";
 import NotFound404 from "../pages/NotFound404.jsx";
+import {AdminDashboard} from "../admin/AdminDashboard.jsx";
 const Login = React.lazy(() => import("../pages/Login.jsx"));
 const Registration = React.lazy(() => import("../pages/Registration.jsx"));
 const Products = React.lazy(() => import("../pages/Products.jsx"));
@@ -21,6 +22,7 @@ const ContactUs = React.lazy(() => import("../pages/ContactUs.jsx"))
 const AboutUs = React.lazy(() => import("../pages/AboutUs.jsx"));
 const ProductDetails = React.lazy(()=> import('../pages/ProductDetails.jsx')) 
 function RootRoute() {
+
   return (
     <UserContextProvider>
         <ProductContextProvider>

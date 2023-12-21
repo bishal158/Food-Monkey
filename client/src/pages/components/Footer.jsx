@@ -182,29 +182,32 @@ function Footer() {
           </div>
           <div className={"payment-partners"}>
             <h3>Payment Partners</h3>
-            <div className={"partners"}>
-              <div className={"partner"}>
-                <img src={Visa} alt={"..."} />
+            <marquee direction="right" >
+              <div className={"partners"}>
+                <div className={"partner"}>
+                  <img src={Visa} alt={"..."}/>
+                </div>
+                <div className={"partner"}>
+                  <img src={MasterCard} alt={"..."}/>
+                </div>
+                <div className={"partner"}>
+                  <img src={AmericanExpress} alt={"..."}/>
+                </div>
+                <div className={"partner"}>
+                  <img src={Bkash} alt={"..."}/>
+                </div>
+                <div className={"partner"}>
+                  <img src={Nagad} alt={"..."}/>
+                </div>
+                <div className={"partner"}>
+                  <img src={Rocket} alt={"..."}/>
+                </div>
+                <div className={"partner"}>
+                  <img src={Upay} alt={"..."}/>
+                </div>
               </div>
-              <div className={"partner"}>
-                <img src={MasterCard} alt={"..."} />
-              </div>
-              <div className={"partner"}>
-                <img src={AmericanExpress} alt={"..."} />
-              </div>
-              <div className={"partner"}>
-                <img src={Bkash} alt={"..."} />
-              </div>
-              <div className={"partner"}>
-                <img src={Nagad} alt={"..."} />
-              </div>
-              <div className={"partner"}>
-                <img src={Rocket} alt={"..."} />
-              </div>
-              <div className={"partner"}>
-                <img src={Upay} alt={"..."} />
-              </div>
-            </div>
+            </marquee>
+
           </div>
           <div className={"information"}>
             <h4>More Information</h4>
@@ -213,7 +216,8 @@ function Footer() {
               <Link to={"/terms-and-condition"} className={'info'}>Terms and Condition</Link>
               <Link to={"/privacy-policy"} className={'info'}>Privacy Policy</Link>
             </div>
-            <h5 className={'copy-right'}><FontAwesomeIcon icon="fa-solid fa-copyright" />2023 Copyright: FoodMonkey.com</h5>
+            <h5 className={'copy-right'}><FontAwesomeIcon icon="fa-solid fa-copyright"/>2023 Copyright: FoodMonkey.com
+            </h5>
           </div>
         </div>
       </div>

@@ -1,7 +1,10 @@
 import "./styles/ContactUs.css";
 import { useForm, ValidationError } from "@formspree/react";
 import {Link} from "react-router-dom";
+import {useContext} from "react";
+import {UserContext} from "../context/UserContext.jsx";
 const ContactUs = () => {
+  const { fullName,phone,email } = useContext(UserContext);
   const [state, handleSubmit] = useForm("xnqeapyn");
   if (state.succeeded) {
     return (
@@ -41,6 +44,8 @@ const ContactUs = () => {
               name="name"
               id="name"
               placeholder="Enter your name"
+              value={fullName}
+              readOnly={true}
               required
             />
           </div>
@@ -52,6 +57,8 @@ const ContactUs = () => {
               name="email"
               id="email"
               placeholder="Enter your email"
+              value={email}
+              readOnly={true}
               required
             />
           </div>

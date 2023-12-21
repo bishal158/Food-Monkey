@@ -10,11 +10,14 @@ import Chicken from "../assets/images/promotion/Chicken.jpg";
 import Wings from "../assets/images/promotion/Wings.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCreative } from "swiper/modules";
-import { Link } from "react-router-dom";
+import {json, Link, useNavigate} from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {useState} from "react";
+import {useContext, useState} from "react";
 import { useFormik } from "formik";
 import {loginFormValidation} from "../validators/FormValidation.jsx";
+import axios from "axios";
+import {ToastContainer, toast} from "react-toastify";
+import {UserContext} from "../context/UserContext.jsx";
 
 const loginFormInitialValues = {
   email: "",
@@ -22,6 +25,8 @@ const loginFormInitialValues = {
 };
 
 function Login() {
+  const { fullName, setFullname,phone,setPhone,email,setEmail,isAdmin,setIsAdmin } = useContext(UserContext);
+  const navigator = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const handleShowPassword = () => {
     setShowPassword(!showPassword);
@@ -30,12 +35,28 @@ function Login() {
     useFormik({
       initialValues: loginFormInitialValues,
       validationSchema:loginFormValidation,
-      onSubmit(values,action){
-        console.log(values)
-        action.resetForm()
+      async onSubmit(values, action) {
+        const response = await fetch("http://localhost:5000/api/login", {
+          method: "POST",
+          body: JSON.stringify({...values}),
+          headers: {"Content-Type": "application/json"},
+          credentials: "include",
+        }).then((response) => {
+              response.json().then((userInfo)=>{
+                setEmail(userInfo.email);
+                setPhone(userInfo.phone)
+                setFullname(userInfo.full_name)
+                if (userInfo.email ==="admin@gmail.com"){
+                  setIsAdmin(true)
+                }
+              })
+            navigator('/')
+            }).catch((error) => {
+              console.error(error)
+            });
       }
     });
-  console.log(isValid)
+  console.log(isAdmin)
   return (
     <>
       <div className={"container-fluid login-form-container"}>
@@ -43,41 +64,41 @@ function Login() {
           <div className={"col-md-6 login-form-logo-side"}>
             <h1>Welcome To Food Monkey</h1>
             <Swiper
-              effect={"creative"}
-              grabCursor={true}
-              creativeEffect={{
-                prev: {
-                  rotate: [0, 0, -90],
-                },
-                next: {
-                  rotate: [0, 0, 90],
-                },
-              }}
-              pagination={true}
-              modules={[EffectCreative, Autoplay]}
-              autoplay={{
-                delay: 5000,
-                disableOnInteraction: false,
-              }}
-              loop={true}
+                effect={"creative"}
+                grabCursor={true}
+                creativeEffect={{
+                  prev: {
+                    rotate: [0, 0, -90],
+                  },
+                  next: {
+                    rotate: [0, 0, 90],
+                  },
+                }}
+                pagination={true}
+                modules={[EffectCreative, Autoplay]}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: false,
+                }}
+                loop={true}
             >
               <SwiperSlide>
-                <img src={Pasta} alt={".."} />
+                <img src={Pasta} alt={".."}/>
               </SwiperSlide>
               <SwiperSlide>
-                <img src={Burgur} alt={"..."} />
+                <img src={Burgur} alt={"..."}/>
               </SwiperSlide>
               <SwiperSlide>
-                <img src={Pizza} alt={".."} />
+                <img src={Pizza} alt={".."}/>
               </SwiperSlide>
               <SwiperSlide>
-                <img src={Soup} alt={"..."} />
+                <img src={Soup} alt={"..."}/>
               </SwiperSlide>
               <SwiperSlide>
-                <img src={Chicken} alt={".."} />
+                <img src={Chicken} alt={".."}/>
               </SwiperSlide>
               <SwiperSlide>
-                <img src={Wings} alt={"..."} />
+                <img src={Wings} alt={"..."}/>
               </SwiperSlide>
             </Swiper>
             <h4>A feast fit for a king.</h4>
@@ -172,6 +193,7 @@ function Login() {
           </div>
         </div>
       </div>
+      <ToastContainer/>
     </>
   );
 }

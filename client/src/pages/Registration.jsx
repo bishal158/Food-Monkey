@@ -1,7 +1,8 @@
-/* eslint-disable react/no-unescaped-entities */
+
 import "swiper/css";
 import "swiper/css/effect-creative";
 import "swiper/css/pagination";
+import 'react-toastify/dist/ReactToastify.css';
 import "./styles/Register.css";
 import {useState} from "react";
 import {useFormik} from "formik";
@@ -15,14 +16,15 @@ import Soup from "../assets/images/promotion/Soup.jpg";
 import Chicken from "../assets/images/promotion/Chicken.jpg";
 import Wings from "../assets/images/promotion/Wings.jpg";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {Link} from "react-router-dom";
+import {Link,useNavigate} from "react-router-dom";
+import axios from "axios";
+import {toast, ToastContainer} from "react-toastify";
 
 const registerFormInitialValues = {
     full_name: "",
     phone: "",
     email: "",
     password: "",
-    confirm_password: "",
 };
 
 function Registration (){
@@ -30,16 +32,37 @@ function Registration (){
     const handleShowPassword = () => {
         setViewPassword(!viewPassword);
     };
+    const navigator = useNavigate();
     const { values, errors ,touched,isValid, handleBlur, handleChange, handleSubmit } =
         useFormik({
             initialValues: registerFormInitialValues,
             validationSchema:registerFormValidation,
             onSubmit(values,action){
-                console.log(values)
-                action.resetForm()
+                axios.post('http://localhost:5000/api/signup', {
+                    full_name: values.full_name,
+                    email: values.email,
+                    phone: values.phone,
+                    password: values.password
+                }).then(()=>{
+                    navigator('/Login')
+                    action.resetForm()
+                }).catch(err=>{
+                    if (err.response.status === 400){
+                        toast.error('User already exist', {
+                            position: "top-right",
+                            autoClose: 2000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "dark",
+                        });
+                    }
+                })
+
             }
         });
-    console.log(isValid)
     return (
         <>
             <div className={"container-fluid register-form-container"}>
@@ -84,7 +107,7 @@ function Registration (){
                                 <img src={Wings} alt={"..."} />
                             </SwiperSlide>
                         </Swiper>
-                        <h4>Food coma? We've got the cure.</h4>
+                        <h4>Food coma? We have got the cure.</h4>
                         <h5>Unlock your delicious destiny. Register now!</h5>
                     </div>
                     <div className={"col-md-6 register-form-field-side"}>
@@ -188,28 +211,28 @@ function Registration (){
                                 }
                             </div>
 
-                            <div className={"form-input"}>
-                                <label htmlFor={"confirm_password"}>
-                                    <FontAwesomeIcon icon="fa-solid fa-lock" className={"mx-1"}/>
-                                    Confirm Password
-                                </label>
-                                <input
-                                    type={viewPassword ? "text" : "password"}
-                                    placeholder={"Confirm Password"}
-                                    id={"confirm_password"}
-                                    name="confirm_password"
-                                    value={values.confirm_password}
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                />
-                            </div>
-                            <div className={'input-errors'}>
-                                {errors.confirm_password && touched.confirm_password ? (
-                                    <p><FontAwesomeIcon icon="fa-solid fa-circle-exclamation"
-                                                        className={'mx-1 fa-fade'}/>{errors.confirm_password}</p>
-                                ) : null
-                                }
-                            </div>
+                            {/*<div className={"form-input"}>*/}
+                            {/*    <label htmlFor={"confirm_password"}>*/}
+                            {/*        <FontAwesomeIcon icon="fa-solid fa-lock" className={"mx-1"}/>*/}
+                            {/*        Confirm Password*/}
+                            {/*    </label>*/}
+                            {/*    <input*/}
+                            {/*        type={viewPassword ? "text" : "password"}*/}
+                            {/*        placeholder={"Confirm Password"}*/}
+                            {/*        id={"confirm_password"}*/}
+                            {/*        name="confirm_password"*/}
+                            {/*        value={values.confirm_password}*/}
+                            {/*        onChange={handleChange}*/}
+                            {/*        onBlur={handleBlur}*/}
+                            {/*    />*/}
+                            {/*</div>*/}
+                            {/*<div className={'input-errors'}>*/}
+                            {/*    {errors.confirm_password && touched.confirm_password ? (*/}
+                            {/*        <p><FontAwesomeIcon icon="fa-solid fa-circle-exclamation"*/}
+                            {/*                            className={'mx-1 fa-fade'}/>{errors.confirm_password}</p>*/}
+                            {/*    ) : null*/}
+                            {/*    }*/}
+                            {/*</div>*/}
                             <div className={"form-forget-and-show-password"}>
                                 <Link
                                     to={"/forgot-password"}
@@ -251,6 +274,7 @@ function Registration (){
                     </div>
                 </div>
             </div>
+            <ToastContainer/>
         </>
     );
 }

@@ -1,13 +1,17 @@
-import {createContext, useState} from "react";
+import {createContext, useEffect, useState} from "react";
+import axios from "axios";
 
 export const UserContext = createContext({});
 
 export const UserContextProvider = ({ children }) => {
-    const [userId, setuserId] = useState();
-    const [userEmail, setuserEmail] = useState();
+    const [fullName , setFullname] = useState();
+    const [phone , setPhone] = useState();
+    const [email , setEmail] = useState();
+    const [isAdmin , setIsAdmin] = useState(false);
+
     return (
         <UserContext.Provider
-            value={{ userId, setuserId, userEmail, setuserEmail }}
+            value={{ fullName, setFullname,phone,setPhone,email,setEmail,isAdmin,setIsAdmin }}
         >
             {children}
         </UserContext.Provider>

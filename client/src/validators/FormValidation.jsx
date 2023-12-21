@@ -12,6 +12,6 @@ export const registerFormValidation = yup.object({
     phone: yup.string().min(11).max(11).required("Please enter a valid phone number"),
     email: yup.string().required("Please enter a valid email address").matches(emailRegex,"Your email format is invalid"),
     password: yup.string().min(6,"Minimum length is 6").required('Please enter password'),
-    confirm_password: yup.string().required("Confirm password is required").oneOf([yup.ref("password"),null],"Password does not match")
+    // confirm_password: yup.string().required("Confirm password is required").oneOf([yup.ref("password"),null],"Password does not match")
 })
 

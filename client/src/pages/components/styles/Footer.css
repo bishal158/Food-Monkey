@@ -123,6 +123,14 @@
     margin: 5px;
 
 }
+@media only screen and (max-width: 600px) {
+    .partners {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+    }
+}
 .partner{
     width: 100px;
     height: 100px;
@@ -177,6 +185,7 @@
     transition: all 0.4ms ease-in-out;
 }
 .copy-right{
+    text-align: center;
     margin-bottom: 20px;
     padding: 10px;
     margin-top: 10px;
