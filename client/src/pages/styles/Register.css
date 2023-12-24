@@ -1,215 +1,220 @@
-.register-form-container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #fff;
-    padding: 10px;
+.register-form-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 10px;
 }
-.register-form{
-    width: 90%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
-}
-
-@media screen and (max-width: 768px){
-    .register-form{
-        width: 100%;
-    }
-    .register-form-logo-side{
-        width: 100%;
-    }
-    .register-form-field-side{
-        width: 100%;
-    }
-}
-.register-form-logo-side{
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 20px;
-}
-.register-form-logo-side h1{
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    font-family: -apple-system, sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-}
-.register-form-logo-side h4{
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 10px;
-    color: #FF007F;
-    font-family: -apple-system, sans-serif;
-    font-size: 35px;
-    font-weight: bold;
-}
-.register-form-logo-side h5{
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 20px;
-    color: rgba(8, 8, 8, 0.6);
-    font-family: -apple-system, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
+.register-form {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
 }
 
-.register-form-field-side{
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-}
-.register-form-field-side h2{
-    text-align: center;
-    background-color: #c21760;
-    color: #fff;
+@media screen and (max-width: 768px) {
+  .register-form {
     width: 100%;
-    height: 100%;
-    padding: 10px;
-    margin-top: 15px;
-    border-radius: 5px;
-}
-.register-form-field-side .form{
+  }
+  .register-form-logo-side {
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 12px;
-}
-.register-form-field-side .form .form-input{
+  }
+  .register-form-field-side {
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
+  }
 }
-.register-form-field-side .form .form-forget-and-show-password{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    margin-bottom: 5px;
-
+.register-form-logo-side {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
 }
-.register-form-field-side .form .form-forget-and-show-password label{
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    background-color: #FFFFFF;
-    border: none;
-    border-bottom: 2px #a20808 solid;
-    cursor: pointer;
+.register-form-logo-side h1 {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  font-family: -apple-system, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+.register-form-logo-side h4 {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #ff007f;
+  font-family: -apple-system, sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+}
+.register-form-logo-side h5 {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: rgba(8, 8, 8, 0.6);
+  font-family: -apple-system, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
 }
 
-.register-form-field-side .form .form-input label{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 5px;
-    font-size: 15px;
-    color: black;
-    font-family: -apple-system, Ubuntu, -apple-system, sans-serif;
-    font-weight: bold;
+.register-form-field-side {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
-.register-form-field-side .form .form-input input{
-    width: 100%;
-    height: 50px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid black;
-    font-size: 15px;
+.register-form-field-side h2 {
+  text-align: center;
+  background-color: #c21760;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+.register-form-field-side .form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 12px;
+}
+.register-form-field-side .form .form-input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.register-form-field-side .form .form-forget-and-show-password {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.register-form-field-side .form .form-forget-and-show-password label {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: none;
+  border-bottom: 2px #a20808 solid;
+  cursor: pointer;
+}
+
+.register-form-field-side .form .form-input label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px;
+  font-size: 15px;
+  color: black;
+  font-family:
+    -apple-system,
+    Ubuntu,
+    -apple-system,
+    sans-serif;
+  font-weight: bold;
+}
+.register-form-field-side .form .form-input input {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 15px;
 }
 
 .register-form-field-side .form .form-input input:hover {
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5pt 0.5pt #d3d3d3;
 }
-.register-form-field-side .form .form-input button{
-    width: 180px;
-    padding: 10px;
-    background-color: #c21760;
-    border: none;
-    color: #FFF;
-    border-radius: 5px;
+.register-form-field-side .form .form-input button {
+  width: 180px;
+  padding: 10px;
+  background-color: #c21760;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
 }
 
-.register-form-field-side .form .form-input button:hover{
-    transition: all 0.4s ease-in-out;
-    background-color: #FF007F;
-    transform: scale(1.09);
-    border-radius: 10px;
+.register-form-field-side .form .form-input button:hover {
+  transition: all 0.4s ease-in-out;
+  background-color: #ff007f;
+  transform: scale(1.09);
+  border-radius: 10px;
 }
-.register-form-field-side .form .form-input p{
-    color: black;
-    text-align: center;
-    font-weight: bold;
-    font-family: Ubuntu, -apple-system, sans-serif;
+.register-form-field-side .form .form-input p {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-family:
+    Ubuntu,
+    -apple-system,
+    sans-serif;
 }
-.register-form-field-side .form .input-errors{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.register-form-field-side .form .input-errors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.register-form-field-side .form .input-errors p{
-    
-    text-transform: capitalize;
-    color: #FF007F;
-    padding: 5px;
+.register-form-field-side .form .input-errors p {
+  text-transform: capitalize;
+  color: #ff007f;
+  padding: 5px;
 }
 .register-form-container .swiper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .register-form-container .swiper-slide {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    box-shadow: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: #fff;
 }
 
 .register-form-container .swiper-slide img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin-top: 20px;
-    object-fit: center;
-    margin-bottom: 15px;
-    animation: rotate 15s linear infinite;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-top: 20px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  animation: rotate 15s linear infinite;
 }
 @keyframes rotate {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

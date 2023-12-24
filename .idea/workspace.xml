@@ -5,24 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8731501-9f1f-448a-a411-cc4bcb91e8b2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/admin/component/AdminAddProducts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/UserContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/UserContext.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/helpers/ScreenWidth.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/ContactUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/ContactUs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/AdminDashboard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/AdminHeader.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/ProductContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/ProductContext.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/ProductDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/ProductDetails.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Registration.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/components/styles/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/styles/Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/components/MostOrderedFood.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/MostOrderedFood.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/components/ProductList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/ProductList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/components/styles/MostOrderedFood.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/styles/MostOrderedFood.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/styles/Register.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/styles/Register.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/routes/RootRoute.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routes/RootRoute.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/validators/FormValidation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/validators/FormValidation.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/user-controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/controllers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/user-routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -57,12 +59,17 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.16.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.16.20&quot;,
     &quot;last_opened_file_path&quot;: &quot;F:/MY CLASS/ALL OF MY PROJECTS/Food-Monkey&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\UseR\\AppData\\Roaming\\npm\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -75,6 +82,11 @@
         <entry key="com.intellij.reactbuddy.storybook" value="false" />
       </map>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\MY CLASS\ALL OF MY PROJECTS\Food-Monkey\client\src\admin\component" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -92,7 +104,14 @@
       <workItem from="1703124563152" duration="9697000" />
       <workItem from="1703136664524" duration="938000" />
       <workItem from="1703140360231" duration="1451000" />
-      <workItem from="1703161172805" duration="9712000" />
+      <workItem from="1703161172805" duration="12787000" />
+      <workItem from="1703261770636" duration="1404000" />
+      <workItem from="1703333716085" duration="2568000" />
+      <workItem from="1703337248792" duration="14848000" />
+      <workItem from="1703378305173" duration="9520000" />
+      <workItem from="1703393206045" duration="118000" />
+      <workItem from="1703403713353" duration="1740000" />
+      <workItem from="1703420439871" duration="4246000" />
     </task>
     <servers />
   </component>

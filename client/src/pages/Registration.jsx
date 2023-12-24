@@ -27,7 +27,7 @@ const registerFormInitialValues = {
     password: "",
 };
 
-function Registration (){
+function Registration () {
     const [viewPassword, setViewPassword] = useState(false);
     const handleShowPassword = () => {
         setViewPassword(!viewPassword);
@@ -211,28 +211,6 @@ function Registration (){
                                 }
                             </div>
 
-                            {/*<div className={"form-input"}>*/}
-                            {/*    <label htmlFor={"confirm_password"}>*/}
-                            {/*        <FontAwesomeIcon icon="fa-solid fa-lock" className={"mx-1"}/>*/}
-                            {/*        Confirm Password*/}
-                            {/*    </label>*/}
-                            {/*    <input*/}
-                            {/*        type={viewPassword ? "text" : "password"}*/}
-                            {/*        placeholder={"Confirm Password"}*/}
-                            {/*        id={"confirm_password"}*/}
-                            {/*        name="confirm_password"*/}
-                            {/*        value={values.confirm_password}*/}
-                            {/*        onChange={handleChange}*/}
-                            {/*        onBlur={handleBlur}*/}
-                            {/*    />*/}
-                            {/*</div>*/}
-                            {/*<div className={'input-errors'}>*/}
-                            {/*    {errors.confirm_password && touched.confirm_password ? (*/}
-                            {/*        <p><FontAwesomeIcon icon="fa-solid fa-circle-exclamation"*/}
-                            {/*                            className={'mx-1 fa-fade'}/>{errors.confirm_password}</p>*/}
-                            {/*    ) : null*/}
-                            {/*    }*/}
-                            {/*</div>*/}
                             <div className={"form-forget-and-show-password"}>
                                 <Link
                                     to={"/forgot-password"}

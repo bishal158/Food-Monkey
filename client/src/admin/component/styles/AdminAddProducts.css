@@ -1,0 +1,41 @@
+.add-product-form {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-product-form input {
+  padding: 12px;
+  border: 1px solid black;
+  background-color: #f2f2f2;
+}
+.add-product-form label {
+  color: black;
+  font-family: -apple-system, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+.add-product-form textarea {
+  padding: 12px;
+  border: 1px solid black;
+  background-color: #f2f2f2;
+}
+.add-product-form .input-errors p {
+  text-transform: capitalize;
+  color: #ff007f;
+  padding: 5px;
+}
+.add-product-form input[type="submit"] {
+  background-color: #c21760;
+  border: none;
+  color: #fff;
+  font-family: -apple-system, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+.add-product-form input[type="submit"]:hover {
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.005);
+}
