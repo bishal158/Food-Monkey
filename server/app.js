@@ -10,7 +10,7 @@ const cookieParser = require("cookie-parser");
 app.use(cookieParser());
 app.use(
   cors({
-    credentials: true,
+    credentials: false,
     origin: [
       "http://localhost:5173",
       "https://658ae1ca727b005f63888b7b--eclectic-hummingbird-5430ab.netlify.app",
