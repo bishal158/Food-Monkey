@@ -17,7 +17,7 @@ app.use(
     {
       credentials: true,
       origin:
-        "https://658ae1ca727b005f63888b7b--eclectic-hummingbird-5430ab.netlify.app",
+        "https://658ae1ca727b005f63888b7b--eclectic-hummingbird-5430ab.netlify.app/",
     },
   ),
 );
