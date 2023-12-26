@@ -9,10 +9,17 @@ const cookieParser = require("cookie-parser");
 
 app.use(cookieParser());
 app.use(
-  cors({
-    credentials: true,
-    origin: "http://localhost:5173",
-  }),
+  cors(
+    {
+      credentials: true,
+      origin: "http://localhost:5173",
+    },
+    {
+      credentials: true,
+      origin:
+        "https://658ae1ca727b005f63888b7b--eclectic-hummingbird-5430ab.netlify.app",
+    },
+  ),
 );
 app.use(express.json());
 // app.use(bodyParser.json());
