@@ -133,7 +133,7 @@ const addCartItem = async (req, res, next) => {
   jwt.verify(token, JWT_SECRET_KEY, {}, async (error, info) => {
     if (error) throw error;
     const { amount, foodItemId } = req.body;
-    console.log(foodItemId);
+    // console.log(foodItemId);
     const cartItem = await CartItem.create({
       user: info.id,
       product: foodItemId,
@@ -146,16 +146,13 @@ const addCartItem = async (req, res, next) => {
 const getCartItem = async (req, res, next) => {
   const { token } = req.cookies;
   try {
-    // if (!isValidUserId(userId)) {
-    //   return res.status(401).json({ message: 'Invalid user ID' });
-    // }
     jwt.verify(token, JWT_SECRET_KEY, {}, async (error, info) => {
       if (error) throw error;
       const cartItems = await CartItem.find({ user: info.id })
         .populate("user")
         .populate("product");
       res.json(cartItems);
-      console.log(cartItems);
+      // console.log(cartItems);
     });
   } catch (error) {
     console.error(error);
