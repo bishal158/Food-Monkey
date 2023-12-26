@@ -14,6 +14,7 @@ import { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import { CartAmountToggle } from "./components/CartAmountToggle.jsx";
 import axios from "axios";
+import { BASEURL } from "../../config.js";
 
 function ProductDetails() {
   const [amount, setAmount] = useState(1);
@@ -27,20 +28,18 @@ function ProductDetails() {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/getProductDetails/${id}`).then(
-      (response) => {
-        response.json().then((productDetails) => {
-          setProductDetails(productDetails);
-        });
-      },
-    );
+    fetch(`${BASEURL}api/getProductDetails/${id}`).then((response) => {
+      response.json().then((productDetails) => {
+        setProductDetails(productDetails);
+      });
+    });
   }, []);
 
   const addToCart = (amount) => {
     console.log(amount);
     axios
       .post(
-        "http://localhost:5000/api/addCartItem",
+        `${BASEURL}api/addCartItem`,
         {
           amount: amount,
           foodItemId: productDetails._id,
@@ -70,9 +69,7 @@ function ProductDetails() {
               >
                 <SwiperSlide>
                   <img
-                    src={
-                      "http://localhost:5000/" + productDetails.product_image_1
-                    }
+                    src={`${BASEURL}` + productDetails.product_image_1}
                     alt="..."
                   />
                 </SwiperSlide>

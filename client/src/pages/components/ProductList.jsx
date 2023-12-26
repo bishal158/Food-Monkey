@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext } from "react";
 import { ProductContext } from "../../context/ProductContext.jsx";
+import { BASEURL } from "../../../config.js";
 export const ProductList = () => {
   const { products } = useContext(ProductContext);
   return (
@@ -16,7 +17,7 @@ export const ProductList = () => {
                 <div className={"product-card"} key={product._id}>
                   <div className={"product-cover"}>
                     <img
-                      src={"http://localhost:5000/" + product.product_image_1}
+                      src={`${BASEURL}` + product.product_image_1}
                       alt={"..."}
                     />
                   </div>

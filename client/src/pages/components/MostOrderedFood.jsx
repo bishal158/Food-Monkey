@@ -9,6 +9,7 @@ import { faBangladeshiTakaSign } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { useContext, useRef } from "react";
 import { ProductContext } from "../../context/ProductContext.jsx";
+import { BASEURL } from "../../../config.js";
 
 const MostOrderedFood = () => {
   const progressCircle = useRef(null);
@@ -50,7 +51,7 @@ const MostOrderedFood = () => {
                   <div className={"most-ordered-foods"}>
                     <div className={"most-ordered-food-image"}>
                       <img
-                        src={"http://localhost:5000/" + product.product_image_1}
+                        src={`${BASEURL}` + product.product_image_1}
                         alt={"...."}
                       />
                     </div>

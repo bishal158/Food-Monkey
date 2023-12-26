@@ -1,11 +1,12 @@
 import { createContext, useEffect, useState } from "react";
+import { BASEURL } from "../../config.js";
 
 export const ProductContext = createContext({});
 
 export const ProductContextProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/api/getProduct").then((response) => {
+    fetch(`${BASEURL}api/getProduct`).then((response) => {
       response.json().then((product) => {
         setProducts(product);
       });

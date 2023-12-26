@@ -5,8 +5,8 @@ import Sylhet from "../../assets/images/Sylhet.jpg";
 import Rajshahi from "../../assets/images/Rajshahi.webp";
 import Rangpur from "../../assets/images/Rangpur.jpg";
 import Mymensingh from "../../assets/images/Mymensingh.jpg";
-import Chilli from '../../assets/Chilli.png'
-import {Link} from "react-router-dom";
+
+import { Link } from "react-router-dom";
 
 const Cities = () => {
   const cities = [
@@ -49,24 +49,28 @@ const Cities = () => {
   ];
 
   return (
-      <>
-        <div className={"container-fluid cities-container"}>
-          <h2>Find us in these cities and many more!</h2>
-          <div className={"cities "}>
-            {cities.map((city,index) => (
-                <Link className="card city slit-in-vertical" key={index} to={'/login'}>
-                  <img src={city.cover} className="card-img-top" alt="..."/>
-                  <div className="card-body city-name">
-                    <p>{city.name}</p>
-                  </div>
-                </Link>
-            ))}
-          </div>
+    <>
+      <div className={"container-fluid cities-container"}>
+        <h2>Find us in these cities and many more!</h2>
+        <div className={"cities "}>
+          {cities.map((city, index) => (
+            <Link
+              className="card city slit-in-vertical"
+              key={index}
+              to={"/login"}
+            >
+              <img src={city.cover} className="card-img-top" alt="..." />
+              <div className="card-body city-name">
+                <p>{city.name}</p>
+              </div>
+            </Link>
+          ))}
         </div>
-        {/*<div className={'bottom-chilli'}>*/}
-        {/*  <img src={Chilli} alt={'...'}/>*/}
-        {/*</div>*/}
-      </>
+      </div>
+      {/*<div className={'bottom-chilli'}>*/}
+      {/*  <img src={Chilli} alt={'...'}/>*/}
+      {/*</div>*/}
+    </>
   );
 };
 

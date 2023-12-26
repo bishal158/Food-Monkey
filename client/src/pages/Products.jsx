@@ -4,10 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Filter } from "../features/Filter.jsx";
 import { ProductList } from "./components/ProductList.jsx";
 import Sheet from "react-modal-sheet";
-import {useState} from "react";
-// import width from '../helpers/ScreenWidth.jsx'
+import { useState } from "react";
 function Products() {
-    const [filter, setFilter] = useState(false);
+  const [filter, setFilter] = useState(false);
   return (
     <>
       <Promotion />
@@ -28,15 +27,19 @@ function Products() {
           <ProductList />
         </div>
       </div>
-        <Sheet isOpen={filter} onClose={() => setFilter(false)} detent={"content-height"}>
-            <Sheet.Container>
-                <Sheet.Header />
-                <Sheet.Content>
-                    <Filter/>
-                </Sheet.Content>
-            </Sheet.Container>
-            <Sheet.Backdrop />
-        </Sheet>
+      <Sheet
+        isOpen={filter}
+        onClose={() => setFilter(false)}
+        detent={"content-height"}
+      >
+        <Sheet.Container>
+          <Sheet.Header />
+          <Sheet.Content>
+            <Filter />
+          </Sheet.Content>
+        </Sheet.Container>
+        <Sheet.Backdrop />
+      </Sheet>
     </>
   );
 }

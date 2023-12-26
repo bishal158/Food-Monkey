@@ -8,6 +8,7 @@ import { UserContext } from "../../context/UserContext.jsx";
 import { Tooltip } from "react-tooltip";
 import Sheet from "react-modal-sheet";
 import { CartItemContext } from "../../context/CartItemContext.jsx";
+import { BASEURL } from "../../../config.js";
 
 const Header = () => {
   const { cartItem } = useContext(CartItemContext);
@@ -32,7 +33,7 @@ const Header = () => {
     setIsAdmin,
   } = useContext(UserContext);
   useEffect(() => {
-    fetch("http://localhost:5000/api/user", {
+    fetch(`${BASEURL}api/user`, {
       credentials: "include",
     })
       .then((response) => {
@@ -47,7 +48,7 @@ const Header = () => {
       });
   }, []);
   const logout = async () => {
-    await fetch("http://localhost:5000/api/logout", {
+    await fetch(`${BASEURL}api/logout`, {
       credentials: "include",
       method: "POST",
     });

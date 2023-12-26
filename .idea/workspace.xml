@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8731501-9f1f-448a-a411-cc4bcb91e8b2" name="Changes" comment="" />
+    <list default="true" id="e8731501-9f1f-448a-a411-cc4bcb91e8b2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/CartItemContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/CartItemContext.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/ProductContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/ProductContext.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/ProductDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/ProductDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Products.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Registration.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/components/CartItems.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/CartItems.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/components/Cities.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/Cities.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/components/MostOrderedFood.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/MostOrderedFood.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/components/ProductList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/ProductList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +110,8 @@
       <workItem from="1703468316845" duration="2221000" />
       <workItem from="1703497022947" duration="19636000" />
       <workItem from="1703554758445" duration="2465000" />
-      <workItem from="1703597173727" duration="2680000" />
+      <workItem from="1703597173727" duration="4465000" />
+      <workItem from="1703603283733" duration="2768000" />
     </task>
     <servers />
   </component>

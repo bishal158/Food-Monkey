@@ -1,12 +1,13 @@
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
+import { BASEURL } from "../../config.js";
 
 export const CartItemContext = createContext({});
 
 export const CartItemContextProvider = ({ children }) => {
   const [cartItem, setcartItem] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/api/getCartItem", {
+    fetch(`${BASEURL}api/getCartItem`, {
       method: "GET",
       credentials: "include",
     }).then((response) => {

@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import Salad from "../../assets/images/promotion/Starter.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./styles/CartItems.css";
 import { useContext } from "react";
-import { ProductContext } from "../../context/ProductContext.jsx";
 import { CartItemContext } from "../../context/CartItemContext.jsx";
+import { BASEURL } from "../../../config.js";
 
 function CartItems() {
   const { cartItem } = useContext(CartItemContext);
@@ -32,10 +31,7 @@ function CartItems() {
                         <th scope="row">{index + 1}</th>
                         <td>
                           <img
-                            src={
-                              "http://localhost:5000/" +
-                              cart.product.product_image_1
-                            }
+                            src={`${BASEURL}` + cart.product.product_image_1}
                             alt={".."}
                           />
                         </td>

@@ -18,6 +18,7 @@ import { loginFormValidation } from "../validators/FormValidation.jsx";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import { UserContext } from "../context/UserContext.jsx";
+import { BASEURL } from "../../config.js";
 
 const loginFormInitialValues = {
   email: "",
@@ -52,15 +53,12 @@ function Login() {
     initialValues: loginFormInitialValues,
     validationSchema: loginFormValidation,
     async onSubmit(values, action) {
-      const response = await fetch(
-        "https://food-monkey.onrender.com/api/login",
-        {
-          method: "POST",
-          body: JSON.stringify({ ...values }),
-          headers: { "Content-Type": "application/json" },
-          credentials: "include",
-        },
-      )
+      const response = await fetch(`${BASEURL}api/login`, {
+        method: "POST",
+        body: JSON.stringify({ ...values }),
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+      })
         .then((response) => {
           response.json().then((userInfo) => {
             setEmail(userInfo.email);
