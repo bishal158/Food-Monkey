@@ -11,7 +11,11 @@ app.use(cookieParser());
 app.use(
   cors({
     credentials: true,
-    origin: ["http://localhost:5173", "https://food-monkey.vercel.app/"],
+    origins: [
+      "http://localhost:5173",
+      "https://food-monkey.vercel.app",
+      "https://food-monkey.onrender.com/",
+    ],
     methods: ["GET", "POST", "DELETE", "PUT"],
   }),
 );
