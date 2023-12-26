@@ -9,6 +9,8 @@ const {
   addProduct,
   getProduct,
   getProductDetails,
+  addCartItem,
+  getCartItem,
 } = require("../controllers/controllers");
 const multer = require("multer");
 const upload = multer({ dest: "uploads/" });
@@ -21,4 +23,6 @@ router.post("/logout", logout);
 router.post("/addProduct", upload.single("product_image_1"), addProduct);
 router.get("/getProduct", getProduct);
 router.get("/getProductDetails/:id", getProductDetails);
+router.post("/addCartItem", addCartItem);
+router.get("/getCartItem", getCartItem);
 module.exports = router;

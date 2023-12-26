@@ -4,11 +4,6 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "./styles/MostOrderedFood.css";
-import Bangladeshi from "../../assets/images/Bangladeshi.jpg";
-// import Japaness from "../../assets/images/Japaness.jpg";
-// import Thai from "../../assets/images/Thai.jpg";
-// import FastFood from "../../assets/images/FastFood.jpg";
-// import Chinese from "../../assets/images/Chiness.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBangladeshiTakaSign } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
@@ -51,7 +46,7 @@ const MostOrderedFood = () => {
           {products.length > 0 &&
             products.map((product) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={product._id}>
                   <div className={"most-ordered-foods"}>
                     <div className={"most-ordered-food-image"}>
                       <img

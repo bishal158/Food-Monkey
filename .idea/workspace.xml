@@ -5,25 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8731501-9f1f-448a-a411-cc4bcb91e8b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/admin/component/AdminAddProducts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/AdminDashboard.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/AdminHeader.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/ProductContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/ProductContext.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Cart.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/ProductDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/ProductDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Registration.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/components/CartItems.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/CartItems.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/components/MostOrderedFood.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/MostOrderedFood.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/components/ProductList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/ProductList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/components/styles/MostOrderedFood.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/components/styles/MostOrderedFood.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/styles/Register.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/styles/Register.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/routes/RootRoute.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routes/RootRoute.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/validators/FormValidation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/validators/FormValidation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/user-controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/controllers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/user-routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/controllers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -112,6 +103,10 @@
       <workItem from="1703393206045" duration="118000" />
       <workItem from="1703403713353" duration="1740000" />
       <workItem from="1703420439871" duration="4246000" />
+      <workItem from="1703433045417" duration="2764000" />
+      <workItem from="1703468316845" duration="2221000" />
+      <workItem from="1703497022947" duration="19636000" />
+      <workItem from="1703554758445" duration="1851000" />
     </task>
     <servers />
   </component>

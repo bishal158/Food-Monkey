@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 import Salad from "../../assets/images/promotion/Starter.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import './styles/CartItems.css'
+import "./styles/CartItems.css";
+import { useContext } from "react";
+import { ProductContext } from "../../context/ProductContext.jsx";
+import { CartItemContext } from "../../context/CartItemContext.jsx";
+
 function CartItems() {
+  const { cartItem } = useContext(CartItemContext);
   return (
     <>
       <div className={"container-fluid cart-items-details"}>
@@ -20,93 +25,44 @@ function CartItems() {
                 </tr>
               </thead>
               <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>
-                  <img src={Salad} alt={".."}/>
-                </td>
-                <td>Salad</td>
-                <td>
-                    <span className={'inc-dec-button'}>
-                      <FontAwesomeIcon icon="fa-solid fa-plus" className={'mx-2 fa-sm'}/>
-                    </span>
-                  x2
-                  <span>
-                      <FontAwesomeIcon icon="fa-solid fa-minus" className={'mx-2 fa-sm'}/>
-                    </span>
-                </td>
-                <td><FontAwesomeIcon icon="fa-solid fa-bangladeshi-taka-sign"/> 1000</td>
-                <td>
-                  <FontAwesomeIcon icon="fa-solid fa-trash" className={'link-danger'}/>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">1</th>
-                <td>
-                  <img src={Salad} alt={".."}/>
-                </td>
-                <td>Salad</td>
-                <td>
-                    <span className={'inc-dec-button'}>
-                      <FontAwesomeIcon icon="fa-solid fa-plus" className={'mx-2 fa-sm'}/>
-                    </span>
-                  x2
-                  <span>
-                      <FontAwesomeIcon icon="fa-solid fa-minus" className={'mx-2 fa-sm'}/>
-                    </span>
-                </td>
-                <td><FontAwesomeIcon icon="fa-solid fa-bangladeshi-taka-sign"/> 1000</td>
-                <td>
-                  <FontAwesomeIcon icon="fa-solid fa-trash" className={'link-danger'}/>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">1</th>
-                <td>
-                  <img src={Salad} alt={".."}/>
-                </td>
-                <td>Salad</td>
-                <td>
-                    <span className={'inc-dec-button'}>
-                      <FontAwesomeIcon icon="fa-solid fa-plus" className={'mx-2 fa-sm'}/>
-                    </span>
-                  x2
-                  <span>
-                      <FontAwesomeIcon icon="fa-solid fa-minus" className={'mx-2 fa-sm'}/>
-                    </span>
-                </td>
-                <td><FontAwesomeIcon icon="fa-solid fa-bangladeshi-taka-sign"/> 1000</td>
-                <td>
-                  <FontAwesomeIcon icon="fa-solid fa-trash" className={'link-danger'}/>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">1</th>
-                <td>
-                  <img src={Salad} alt={".."}/>
-                </td>
-                <td>Salad</td>
-                <td>
-                    <span className={'inc-dec-button'}>
-                      <FontAwesomeIcon icon="fa-solid fa-plus" className={'mx-2 fa-sm'}/>
-                    </span>
-                  x2
-                  <span>
-                      <FontAwesomeIcon icon="fa-solid fa-minus" className={'mx-2 fa-sm'}/>
-                    </span>
-                </td>
-                <td><FontAwesomeIcon icon="fa-solid fa-bangladeshi-taka-sign"/> 1000</td>
-                <td>
-                  <FontAwesomeIcon icon="fa-solid fa-trash" className={'link-danger'}/>
-                </td>
-              </tr>
+                {cartItem.length > 0 &&
+                  cartItem.map((cart, index) => {
+                    return (
+                      <tr key={index}>
+                        <th scope="row">{index + 1}</th>
+                        <td>
+                          <img
+                            src={
+                              "http://localhost:5000/" +
+                              cart.product.product_image_1
+                            }
+                            alt={".."}
+                          />
+                        </td>
+                        <td>{cart.product.product_name}</td>
+                        <td>{cart.quantity}</td>
+                        <td>
+                          <FontAwesomeIcon icon="fa-solid fa-bangladeshi-taka-sign" />{" "}
+                          {cart.quantity * cart.product.product_price}
+                        </td>
+                        <td>
+                          <FontAwesomeIcon
+                            icon="fa-solid fa-trash"
+                            className={"link-danger"}
+                          />
+                        </td>
+                      </tr>
+                    );
+                  })}
               </tbody>
             </table>
           </div>
           <div className={"col-md-4 payment-receipt-display"}>
             <p>Total Items x{2}</p>
             <p>Subtotal ${10220}</p>
-            <Link to={"/checkout"} className={'payment-review-button'}>Review Payment and Checkout</Link>
+            <Link to={"/checkout"} className={"payment-review-button"}>
+              Review Payment and Checkout
+            </Link>
           </div>
         </div>
       </div>

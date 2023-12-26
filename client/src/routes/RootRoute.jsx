@@ -12,10 +12,11 @@ import { ProductContextProvider } from "../context/ProductContext.jsx";
 import Footer from "../pages/components/Footer.jsx";
 import NotFound404 from "../pages/NotFound404.jsx";
 import { AdminAddProducts } from "../admin/component/AdminAddProducts.jsx";
+import { CartItemContextProvider } from "../context/CartItemContext.jsx";
 const Login = React.lazy(() => import("../pages/Login.jsx"));
 const Registration = React.lazy(() => import("../pages/Registration.jsx"));
 const Products = React.lazy(() => import("../pages/Products.jsx"));
-const CartItems = React.lazy(() => import("../pages/Cart.jsx"));
+const CartItems = React.lazy(() => import("../pages/components/CartItems.jsx"));
 const Services = React.lazy(() => import("../pages/Services.jsx"));
 const Checkout = React.lazy(() => import("../pages/CheckOut.jsx"));
 const ContactUs = React.lazy(() => import("../pages/ContactUs.jsx"));
@@ -25,86 +26,88 @@ function RootRoute() {
   return (
     <UserContextProvider>
       <ProductContextProvider>
-        <Header />
-        <Routes>
-          <Route path={"/"} element={<Home />} />
-          <Route
-            path={"products"}
-            element={
-              <React.Suspense fallback={<Loaders />}>
-                <Products />
-              </React.Suspense>
-            }
-          />
-          <Route
-            path="/product-details/:id"
-            element={
-              <React.Suspense fallback={<Loaders />}>
-                <ProductDetails />
-              </React.Suspense>
-            }
-          />
-          <Route
-            path={"services"}
-            element={
-              <React.Suspense fallback={<Loaders />}>
-                <Services />
-              </React.Suspense>
-            }
-          />
+        <CartItemContextProvider>
+          <Header />
+          <Routes>
+            <Route path={"/"} element={<Home />} />
+            <Route
+              path={"products"}
+              element={
+                <React.Suspense fallback={<Loaders />}>
+                  <Products />
+                </React.Suspense>
+              }
+            />
+            <Route
+              path="/product-details/:id"
+              element={
+                <React.Suspense fallback={<Loaders />}>
+                  <ProductDetails />
+                </React.Suspense>
+              }
+            />
+            <Route
+              path={"services"}
+              element={
+                <React.Suspense fallback={<Loaders />}>
+                  <Services />
+                </React.Suspense>
+              }
+            />
 
-          <Route
-            path={"checkout"}
-            element={
-              <React.Suspense fallback={<Loaders />}>
-                <Checkout />
-              </React.Suspense>
-            }
-          />
-          <Route
-            path={"contact-us"}
-            element={
-              <React.Suspense fallback={<Loaders />}>
-                <ContactUs />
-              </React.Suspense>
-            }
-          />
-          <Route
-            path={"about-us"}
-            element={
-              <React.Suspense fallback={<Loaders />}>
-                <AboutUs />
-              </React.Suspense>
-            }
-          />
-          <Route
-            path={"cart"}
-            element={
-              <React.Suspense fallback={<Loaders />}>
-                <CartItems />
-              </React.Suspense>
-            }
-          />
-          <Route
-            path={"login"}
-            element={
-              <React.Suspense fallback={<Loaders />}>
-                <Login />
-              </React.Suspense>
-            }
-          />
-          <Route
-            path={"register"}
-            element={
-              <React.Suspense fallback={<Loaders />}>
-                <Registration />
-              </React.Suspense>
-            }
-          />
-          <Route path={"admin/add-products"} element={<AdminAddProducts />} />
-          <Route path={"*"} element={<NotFound404 />} />
-        </Routes>
-        <Footer />
+            <Route
+              path={"checkout"}
+              element={
+                <React.Suspense fallback={<Loaders />}>
+                  <Checkout />
+                </React.Suspense>
+              }
+            />
+            <Route
+              path={"contact-us"}
+              element={
+                <React.Suspense fallback={<Loaders />}>
+                  <ContactUs />
+                </React.Suspense>
+              }
+            />
+            <Route
+              path={"about-us"}
+              element={
+                <React.Suspense fallback={<Loaders />}>
+                  <AboutUs />
+                </React.Suspense>
+              }
+            />
+            <Route
+              path={"cart"}
+              element={
+                <React.Suspense fallback={<Loaders />}>
+                  <CartItems />
+                </React.Suspense>
+              }
+            />
+            <Route
+              path={"login"}
+              element={
+                <React.Suspense fallback={<Loaders />}>
+                  <Login />
+                </React.Suspense>
+              }
+            />
+            <Route
+              path={"register"}
+              element={
+                <React.Suspense fallback={<Loaders />}>
+                  <Registration />
+                </React.Suspense>
+              }
+            />
+            <Route path={"admin/add-products"} element={<AdminAddProducts />} />
+            <Route path={"*"} element={<NotFound404 />} />
+          </Routes>
+          <Footer />
+        </CartItemContextProvider>
       </ProductContextProvider>
     </UserContextProvider>
   );

@@ -11,8 +11,9 @@ import {
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { CartAmountToggle } from "./components/CartAmountToggle.jsx";
+import axios from "axios";
 
 function ProductDetails() {
   const [amount, setAmount] = useState(1);
@@ -24,7 +25,7 @@ function ProductDetails() {
   };
   const [productDetails, setProductDetails] = useState([]);
   const { id } = useParams();
-  console.log(id);
+
   useEffect(() => {
     fetch(`http://localhost:5000/api/getProductDetails/${id}`).then(
       (response) => {
@@ -34,6 +35,25 @@ function ProductDetails() {
       },
     );
   }, []);
+
+  const addToCart = (amount) => {
+    console.log(amount);
+    axios
+      .post(
+        "http://localhost:5000/api/addCartItem",
+        {
+          amount: amount,
+          foodItemId: productDetails._id,
+        },
+        { withCredentials: true },
+      )
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <>
       <div className="product-details-container">
@@ -90,7 +110,7 @@ function ProductDetails() {
                   setDecrease={setDecrease}
                   setIncrease={setIncrease}
                 />
-                <button>
+                <button onClick={() => addToCart(amount)}>
                   Add to Cart <FontAwesomeIcon icon={faCartPlus} />
                 </button>
               </div>

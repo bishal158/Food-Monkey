@@ -40,7 +40,7 @@ export const ProductList = () => {
                     </div>
                     <div className={"product-button"}>
                       <button>
-                        Add to Cart{" "}
+                        Add to Cart
                         <FontAwesomeIcon icon="fa-solid fa-cart-plus" />
                       </button>
                       <button>

@@ -7,8 +7,10 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { UserContext } from "../../context/UserContext.jsx";
 import { Tooltip } from "react-tooltip";
 import Sheet from "react-modal-sheet";
+import { CartItemContext } from "../../context/CartItemContext.jsx";
 
 const Header = () => {
+  const { cartItem } = useContext(CartItemContext);
   const [isOpen, setOpen] = useState(false);
   const [top, setTop] = useState(true);
   useEffect(() => {
@@ -95,7 +97,7 @@ const Header = () => {
           )}
           {email && (
             <div className={"user-info"}>
-              <NavLink to={"/"} className={"user-info-content"}>
+              <NavLink to={"/"} className={"user-info-content user-tool"}>
                 <FontAwesomeIcon icon="fa-solid fa-user" className={"mx-1"} />
                 {fullName}
               </NavLink>
@@ -129,7 +131,7 @@ const Header = () => {
                     className={"user-info-content cart-tool"}
                   >
                     <FontAwesomeIcon icon="fa-solid fa-cart-plus" />
-                    <span className="cart-counter">3</span>
+                    <span className="cart-counter">{cartItem.length}</span>
                   </NavLink>
                   <NavLink
                     to={"/services"}
@@ -273,6 +275,9 @@ const Header = () => {
         <Sheet.Backdrop />
       </Sheet>
       {/*    Tooltip for header content*/}
+      <Tooltip anchorSelect=".user-tool" place="top">
+        {fullName}
+      </Tooltip>
       <Tooltip anchorSelect=".cart-tool" place="top">
         Cart Items
       </Tooltip>
