@@ -10,12 +10,9 @@ const cookieParser = require("cookie-parser");
 app.use(cookieParser());
 app.use(
   cors({
-    credentials: false,
-    origin: [
-      "http://localhost:5173",
-      "https://658ae1ca727b005f63888b7b--eclectic-hummingbird-5430ab.netlify.app",
-    ],
-    methods: ["GET", "HEAD", "POST", "DELETE", "PUT", "UPDATE"],
+    credentials: true,
+    origin: ["http://localhost:5173", "https://food-monkey.vercel.app/"],
+    methods: ["GET", "POST", "DELETE", "PUT"],
   }),
 );
 app.use(express.json());
