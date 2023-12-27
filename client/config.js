@@ -1,4 +1,4 @@
-export const BASEURL = "http://localhost:5000/";
+export const BASEURL = "https://food-monkey.onrender.com/";
 //   https://food-monkey.onrender.com/
 // http://localhost:5000/
 
