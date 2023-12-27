@@ -11,7 +11,7 @@ app.use(cookieParser());
 app.use(
   cors({
     origin:
-      "https://658b87c0caaaa709b1ca8f7f--eclectic-hummingbird-5430ab.netlify.app/",
+      "https://658b87c0caaaa709b1ca8f7f--eclectic-hummingbird-5430ab.netlify.app",
     credentials: true,
   }),
 );
