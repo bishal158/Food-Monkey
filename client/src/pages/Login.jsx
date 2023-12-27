@@ -56,7 +56,10 @@ function Login() {
       const response = await fetch(`${BASEURL}api/login`, {
         method: "POST",
         body: JSON.stringify({ ...values }),
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Request-Headers": "*",
+        },
         credentials: "include",
       })
         .then((response) => {

@@ -11,7 +11,7 @@ export const ProductContextProvider = ({ children }) => {
         setProducts(product);
       });
     });
-  }, []);
+  }, [products, setProducts]);
   return (
     <ProductContext.Provider value={{ products, setProducts }}>
       {children}
