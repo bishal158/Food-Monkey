@@ -8,7 +8,13 @@ const cookieParser = require("cookie-parser");
 // const bodyParser = require("body-parser");
 
 app.use(cookieParser());
-app.use(cors());
+app.use(
+  cors({
+    origin:
+      "https://658b87c0caaaa709b1ca8f7f--eclectic-hummingbird-5430ab.netlify.app/",
+    credentials: true,
+  }),
+);
 // {
 //     credentials: true,
 //     origins: [
