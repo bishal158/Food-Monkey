@@ -10,7 +10,7 @@ const cookieParser = require("cookie-parser");
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://foodmonkey.onrender.com",
+    origin: "http://localhost:5173",
     credentials: true,
   }),
 );
