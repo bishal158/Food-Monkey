@@ -8,19 +8,17 @@ const cookieParser = require("cookie-parser");
 // const bodyParser = require("body-parser");
 
 app.use(cookieParser());
-app.use(
-  cors({
-    credentials: true,
-    origins: [
-      "http://localhost:5173",
-      "https://food-monkey.vercel.app",
-      "https://food-monkey.onrender.com/",
-    ],
-    methods: ["GET", "POST", "DELETE", "PUT"],
-  }),
-);
+app.use(cors());
+// {
+//     credentials: true,
+//     origins: [
+//       "http://localhost:5173",
+//       "https://food-monkey.vercel.app",
+//       "https://food-monkey.onrender.com/",
+//     ],
+//     methods: ["GET", "POST", "DELETE", "PUT"],
+//   }
 app.use(express.json());
-// app.use(bodyParser.json());
 app.use("/uploads", express.static(__dirname + "/uploads"));
 const router = require("./routes/routes");
 app.use("/api", router);
