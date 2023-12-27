@@ -11,7 +11,8 @@ app.use(cookieParser());
 app.use(
   cors({
     credentials: true,
-    origin: "https://food-monkey.vercel.app",
+    origin:
+      "https://658c34b6f580f40008f28742--eclectic-hummingbird-5430ab.netlify.app",
   }),
 );
 // {
