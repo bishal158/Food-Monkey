@@ -56,12 +56,7 @@ function Login() {
       const response = await fetch(`${BASEURL}api/login`, {
         method: "POST",
         body: JSON.stringify({ ...values }),
-        headers: {
-          "Content-Type": "application/json",
-          "Access-Control-Request-Headers":
-            "https://658cf2ae51475c0008620f6a--eclectic-hummingbird-5430ab.netlify.app",
-        },
-        credentials: "include",
+        headers: { "Content-Type": "application/json" },
       })
         .then((response) => {
           response.json().then((userInfo) => {
