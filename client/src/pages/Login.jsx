@@ -58,6 +58,8 @@ function Login() {
         body: JSON.stringify({ ...values }),
         headers: {
           "Content-Type": "application/json",
+          "Access-Control-Request-Headers":
+            "https://658cf2ae51475c0008620f6a--eclectic-hummingbird-5430ab.netlify.app",
         },
         credentials: "include",
       })
