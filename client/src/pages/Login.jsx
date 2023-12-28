@@ -58,7 +58,6 @@ function Login() {
         body: JSON.stringify({ ...values }),
         headers: {
           "Content-Type": "application/json",
-          "Access-Control-Request-Headers": "*",
         },
         credentials: "include",
       })
